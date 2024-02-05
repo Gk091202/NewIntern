@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewIntern</title>
+    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.3s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="Newintern.html">
+                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Newintern.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roadmap.html">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exams.html">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your page content here -->
+
+    <script>
+        // JavaScript to handle navbar visibility on scroll
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('.navbar').classList.remove('hidden');
+            } else {
+                document.querySelector('.navbar').classList.add('hidden');
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
+
+</body>
+
+     
+    <!-- Inside the existing HTML code -->
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 order-lg-1 p-3 p-lg-5 pt-lg-3 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Contact Us</h1>
+
+            <!-- Contact form starts here -->
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="surname" name="surname" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="button" onclick="submitForm()" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- Contact form ends here -->
+
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden order-lg-2">
+            <!-- Image on the right side -->
+            <img class="img-fluid rounded" src="https://static.vecteezy.com/system/resources/previews/011/381/995/original/male-customer-service-3d-cartoon-avatar-portrait-png.png" alt="Your Image">
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript code for form submission -->
+<script>
+    function submitForm() {
+        var form = document.getElementById("contactForm");
+        var formData = new FormData(form);
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("POST", "https://formspree.io/f/mgegvkqb", true); // Replace "your-formspree-id" with your actual Formspree ID
+
+        // Set headers for the request
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    // Successful submission, you can redirect or show a success message here
+                    alert("Thank You! Form submitted successfully!");
+                } else {
+                    // Display an error message
+                    alert("Error submitting the form. Please try again later.");
+                }
+            }
+        };
+
+        // Convert formData to JSON before sending
+        var jsonData = {};
+        formData.forEach(function (value, key) {
+            jsonData[key] = value;
+        });
+
+        var jsonString = JSON.stringify(jsonData);
+
+        xhr.send(jsonString);
+    }
+</script>
+  
+
+
+
+
+</body>
+</html>

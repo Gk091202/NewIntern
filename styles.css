@@ -1,0 +1,140 @@
+.navbar-nav {
+  margin-right: 10px; /* Adjust the margin to add space between navbar items */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust the margin to add space between individual navbar items */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Change the font to sans-serif (use your preferred sans-serif font) */
+}
+
+#neubar {
+    background: #FBF9F1;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+  }
+  
+  .nav-item .active {
+    border-radius: 6px;
+background: #3559E0;
+
+  }
+  #neubar .dropdown-menu a:hover {
+    color: #ff0000
+  }
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+  
+    padding-left:12px;
+    padding-right:12px;
+  }
+  #neubar .dropdown-menu {
+    background : #FBF9F1;
+    
+  }
+  a.navbar-brand {
+    color: #454545
+  }
+
+  .logo-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+.blog-section {
+    margin-bottom: 30px; /* Add margin between each set of blogs */
+}
+
+.col-lg-4,
+.col-lg-7 {
+    padding: 15px; /* Add padding to each column for spacing */
+}
+
+.rounded-lg-3 {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Adjust border-radius as needed */
+}
+
+.display-4,
+.lead {
+    color: #495057;
+}
+
+.text-body-emphasis {
+    color: #007bff;
+}
+
+
+
+@media  (max-width:991px) {
+  .sidebar{
+      background-color: rgba(255,255,255,0.15);
+      backdrop-filter: blur;
+  }
+  
+}
+
+#customCarousel {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px; /* Adjust the border-radius as needed for curved corners */
+  overflow: hidden;
+}
+
+.carousel-inner {
+  transform: translateZ(-50%);
+}
+
+.carousel-item {
+  transform-style: preserve-3d;
+  transform: translateZ(50%);
+}
+
+.carousel-item img {
+  max-height: 100%;
+  width: auto;
+  margin: auto;
+  border-radius: 20px; /* Adjust the border-radius as needed for curved corners */
+}
+
+
+.my-5-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  width: 50%; /* Adjust the width as needed */
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Recent Updates Styles */
+.recent-updates {
+  background-color: #f8f9fa; /* Change the background color if needed */
+}
+
+.recent-updates p {
+  color: #495057; /* Change the text color if needed */
+}
+
+.recent-updates svg {
+  fill: #007bff; /* Change the placeholder image color if needed */
+}
+
+.recent-updates img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+
+

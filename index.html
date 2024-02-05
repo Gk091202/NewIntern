@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewIntern</title>
+    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.3s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="Newintern.html">
+                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Newintern.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roadmap.html">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exams.html">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your page content here -->
+
+    <script>
+        // JavaScript to handle navbar visibility on scroll
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('.navbar').classList.remove('hidden');
+            } else {
+                document.querySelector('.navbar').classList.add('hidden');
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
+
+</body>
+    
+
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <!-- Reversed order for mobile view -->
+        <div class="col-lg-4 offset-lg-1 p-0 order-lg-2">
+            <!-- Animated Background Video -->
+            <style>
+                @media (max-width: 767px) {
+                    #animatedVideo {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            </style>
+            <video id="animatedVideo" width="100%" height="100%" muted>
+                <source src="niw.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 order-lg-1">
+            <style>
+                .custom-sans-serif {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+            </style>
+
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-4 custom-sans-serif"> Everything <br> In One Place, <br> No More Hustles 👩🏻‍🎓👨🏻‍🎓</h1>
+
+            <p class="lead">Explore comprehensive insights on internships, job opportunities, educational courses, and career pathways tailored for new interns. Gain valuable guidance to navigate your professional journey and make informed decisions for a successful career start. Unlock a wealth of resources and advice to shape your path with confidence.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                <a href="aboutus.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">About Us</button></a>
+                <a href="contactus.html"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // JavaScript to play the video only once after page reload
+    const video = document.getElementById("animatedVideo");
+
+    // Check if the video is supported
+    if (video.canPlayType) {
+        // Set the 'loop' attribute initially
+        video.setAttribute("loop", "loop");
+
+        // Play the video
+        video.play();
+
+        // Listen for the 'playing' event and remove the 'loop' attribute
+        video.addEventListener("playing", function () {
+            video.removeAttribute("loop");
+        });
+    }
+</script>
+
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container my-5">
+  <h1 class="fst-italic">Trending posts</h1>
+  <br>
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+
+ <!-- Blog Theme 1 -->
+ <div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://images.unsplash.com/photo-1682686579688-c2ba945eda0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 1" width="450" height="400">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Travel Adventures</h1>
+      <p class="lead">Explore the world with our travel blog. Find exciting destinations, travel tips, and amazing stories from globetrotters.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+<!-- Blog Theme 2 -->
+<div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://plus.unsplash.com/premium_photo-1664382466516-756b1e0721f4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 2" width="720">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Tech Innovations</h1>
+      <p class="lead">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+<!-- Blog Theme 3 -->
+<div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://images.unsplash.com/photo-1703702756941-3504879af434?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 3" width="450" height="400">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Tech Innovations</h1>
+      <p class="lead">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+
+<div class="container my-5">
+  <h1 class="fst-italic">Recent posts</h1>
+  <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Blog Theme 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 1">
+                <div class="card-body">
+                    <h5 class="card-title">How to find Internships?</h5>
+                    <p class="card-text">Here are the few suggestions that would help you to land your first internships...</p>
+                    <a href="blog1-link.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Theme 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 2">
+                <div class="card-body">
+                    <h5 class="card-title">Tech Innovations</h5>
+                    <p class="card-text">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+                    <a href="" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Theme 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 3">
+                <div class="card-body">
+                    <h5 class="card-title">Tech Innovations</h5>
+                    <p class="card-text">Embrace a healthy lifestyle with our wellness blog. Discover fitness tips, nutritious recipes, and holistic approaches to well-being.</p>
+                    <a href="" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Theme 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 4">
+                <div class="card-body">
+                    <h5 class="card-title">Science Discoveries</h5>
+                    <p class="card-text">Uncover the latest scientific breakthroughs and discoveries. Delve into the fascinating world of science with our informative articles.</p>
+                    <a href="blog4-link.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Theme 5 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 5">
+                <div class="card-body">
+                    <h5 class="card-title">Fashion Trends</h5>
+                    <p class="card-text">Stay stylish and trendy with our fashion blog. Get insights into the latest fashion trends, style tips, and more.</p>
+                    <a href="blog5-link.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+                <!-- Blog Theme 6 -->
+                <div class="col">
+                  <div class="card h-100">
+                      <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 5">
+                      <div class="card-body">
+                          <h5 class="card-title">Fashion Trends</h5>
+                          <p class="card-text">Stay stylish and trendy with our fashion blog. Get insights into the latest fashion trends, style tips, and more.</p>
+                          <a href="blog5-link.html" class="btn btn-primary">Read More</a>
+                      </div>
+                  </div>
+              </div>
+
+                      <!-- Blog Theme 7 -->
+        <div class="col">
+          <div class="card h-100">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 5">
+              <div class="card-body">
+                  <h5 class="card-title">Fashion Trends</h5>
+                  <p class="card-text">Stay stylish and trendy with our fashion blog. Get insights into the latest fashion trends, style tips, and more.</p>
+                  <a href="blog5-link.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+              <!-- Blog Theme 8 -->
+              <div class="col">
+                <div class="card h-100">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion Trends</h5>
+                        <p class="card-text">Stay stylish and trendy with our fashion blog. Get insights into the latest fashion trends, style tips, and more.</p>
+                        <a href="blog5-link.html" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+                    <!-- Blog Theme 9 -->
+        <div class="col">
+          <div class="card h-100">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*cS76u4vFB4j_L5_P" class="card-img-top" alt="Blog 5">
+              <div class="card-body">
+                  <h5 class="card-title">Fashion Trends</h5>
+                  <p class="card-text">Stay stylish and trendy with our fashion blog. Get insights into the latest fashion trends, style tips, and more.</p>
+                  <a href="blog5-link.html" class="btn btn-primary">Read More</a>
+              </div>
+          </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+<div class="container my-5">
+    <h1 class="fst-italic">Upcoming Internships</h1>
+    <br>
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1570051008600-b34baa49e751?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Image 1">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Image 2">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1705864864158-4c583edee4e3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Image 3">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1682686581556-a3f0ee0ed556?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Image 4">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container my-5">
+    <h1 class="fst-italic">Roadmaps</h1>
+    <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0"> <b>Hot Trends</b> 🔥</h6>
+        <div class="d-flex text-body-secondary pt-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/8637/8637114.png" alt="User Image 1">
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark"> <mark>Data Analyst </mark> </strong>
+                Analyzing data to provide insights, support decision-making, and optimize business performance. Strong analytical skills required.
+            </p>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+            <img src="https://www.silkdata.ai/uploads/tx_templavoilaplus/s_l_other_ai.svg" alt="User Image 2">
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark"> <mark> AI and Data Scientist </mark> </strong>
+                AI/Data Scientist: Analyze data, develop algorithms, and implement AI solutions for business optimization.
+            </p>
+        </div>
+        <div class="d-flex text-body-secondary pt-3">
+            <img src="data:image/png;base64,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" alt="User Image 3">
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+                <strong class="d-block text-gray-dark"> <mark> Technical Writer </mark> </strong>
+                Compose clear and concise technical documentation for complex subjects. Ensure accuracy and user comprehension.
+            </p>
+        </div>
+        <small class="d-block text-end mt-3">
+            <a href="roadmap.html">All Roadmaps</a>
+        </small>
+    </div>
+</div>
+
+
+
+<div class="container my-5">
+  <h1 class="fst-italic">Emerging Trends News</h1>
+  <br>
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+
+ <!-- Blog Theme 1 -->
+ <div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://images.unsplash.com/photo-1682686579688-c2ba945eda0e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 1" width="450" height="400">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Travel Adventures</h1>
+      <p class="lead">Explore the world with our travel blog. Find exciting destinations, travel tips, and amazing stories from globetrotters.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+<!-- Blog Theme 2 -->
+<div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://plus.unsplash.com/premium_photo-1664382466516-756b1e0721f4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 2" width="720">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Tech Innovations</h1>
+      <p class="lead">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+<!-- Blog Theme 3 -->
+<div class="row blog-section">
+  <div class="col-lg-4 p-0 ">
+      <img class="rounded-lg-3" src="https://images.unsplash.com/photo-1703702756941-3504879af434?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog 3" width="450" height="400">
+  </div>
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Tech Innovations</h1>
+      <p class="lead">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a href=""> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Read More</button></a>
+      </div>
+  </div>
+</div>
+
+    </div>
+</div>
+
+
+
+<div class="container my-5">
+    <h1 class="fst-italic">Book Takeaways</h1>
+    <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+          <!-- Blog Theme 1 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://images.unsplash.com/photo-1612298948864-bb647fe8a241?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 1">
+                  <div class="card-body">
+                      <h5 class="card-title">How to find Internships?</h5>
+                      <p class="card-text">Here are the few suggestions that would help you to land your first internships...</p>
+                      <a href="blog1-link.html" class="btn btn-primary">Read More</a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Blog Theme 2 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://images.unsplash.com/photo-1612298948864-bb647fe8a241?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Tech Innovations</h5>
+                      <p class="card-text">Stay updated on the latest tech trends and innovations. Dive into the world of cutting-edge technology with our insightful articles.</p>
+                      <a href="" class="btn btn-primary">Read More</a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Blog Theme 3 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://images.unsplash.com/photo-1612298948864-bb647fe8a241?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Blog 3">
+                  <div class="card-body">
+                      <h5 class="card-title">Tech Innovations</h5>
+                      <p class="card-text">Embrace a healthy lifestyle with our wellness blog. Discover fitness tips, nutritious recipes, and holistic approaches to well-being.</p>
+                      <a href="" class="btn btn-primary">Read More</a>
+                  </div>
+              </div>
+          </div>
+       </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Menu</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="Newintern.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="internshipsnews.html" class="nav-link p-0 text-body-secondary">Internships News</a></li>
+            <li class="nav-item mb-2"><a href="roadmap.html" class="nav-link p-0 text-body-secondary">Roadmaps</a></li>
+            <li class="nav-item mb-2"><a href="exams.html" class="nav-link p-0 text-body-secondary">Exams</a></li>
+            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Roadmaps</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Font-End Developer</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Analyst</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Project Manager</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Technical Writer</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Back-End Developer</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Blogs</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent Posts</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trending 🔥</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech News</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diverpulse Media</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Weekly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 NewIntern, Diverpulse Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+</html>
