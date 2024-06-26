@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewIntern</title>
+    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.3s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="index.html">
+                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="roadmap.html">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exams.html">Exams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your page content here -->
+
+    <script>
+        // JavaScript to handle navbar visibility on scroll
+        let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                document.querySelector('.navbar').classList.remove('hidden');
+            } else {
+                document.querySelector('.navbar').classList.add('hidden');
+            }
+
+            prevScrollPos = currentScrollPos;
+        };
+    </script>
+
+
+    <style>
+        * {
+    box-sizing: border-box;
+}
+    .content {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      text-align: left;
+      font-size: 1rem;
+      box-shadow: 0 0 9px rgba(25, 1, 1, 0.6);
+      border-radius: 5px;
+
+    }
+    h1{
+        font-style: italic;
+        margin-left: 135px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+
+    }
+    .content a{
+        text-decoration: none;
+        color: black;
+        transition: background-color 0.3s ease;
+    }
+    .content:hover{
+    background-color:  #d5d5f0;
+}
+    .content a:hover{
+    background-color: rgb(144, 191, 209);
+
+}
+
+    </style>
+    
+</head>
+<body>
+  <div class="heading">
+    <h1>Skill Based Roadmap</h1>
+</div>
+  <div class="container text-align-center">
+    <div class="row justify-content-center row-gutter-10 text-align-center">
+     
+      <div class="col-md-3 text-align-center">
+          <div class="content"><a href="https://www.geeksforgeeks.org/frontend-developer-roadmap/">Frontend</a></div>
+        </div>
+        <div class="col-md-3">
+          <div class="content"><a href="https://www.geeksforgeeks.org/backend-developer-roadmap/">Backend</a> </div>
+        </div>
+        <div class="col-md-3">
+          <div class="content"><a href="#">DevOps</a></div>
+        </div>
+      
+
+      <div class="col-md-3">
+        <div class="content"><a href="#">Full Stack</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">Android</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">QA</a></div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="content"><a href="#">PostgreSQL</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">ASP.net Core</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">C++</a></div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="content"><a href="#">AI And Data Scientist</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">Flutter</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">Cyber Security</a> </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="content"><a href="#">software-architect</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">UX Design</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">React Native</a></div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="content"><a href="#">Technical Writer</a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">Game Development</a> </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="content"><a href="#">IOS Development</a> </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">Blockchain</a></div>
+      </div>
+      <div class="col-md-3">
+        <div class="content"><a href="#">create your own </a></div>
+      </div>
+    
+          <!-- Repeat the above structure to create a total of 18 divs -->
+          <!-- You will have 6 rows with 3 columns each -->
+        </div>
+      </div>
+
+      <div class="heading">
+        <h1>Skill Based Roadmap</h1>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center" >
+         
+          <div class="col-md-3">
+              <div class="content"><a href="#">Computer Science</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Angular</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Vue</a></div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="content"><a href="#">Javascript</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">React</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Node.js</a> </div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="content"><a href="#">Typescript</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Python</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">SQL</a></div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="content"><a href="#">Java</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Spring Boot</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">System Design</a></div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="content"><a href="#">Rust</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">GraphQl</a> </div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Go Roadmap</a> </div>
+            </div>
+      
+            <div class="col-md-3">
+              <div class="content"><a href="#">Design Architecture</a></div>
+            </div>
+           
+            <div class="col-md-3">
+              <div class="content"><a href="#">AWS</a></div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="content"><a href="#">Design System</a> </div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Code Review</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#"> Docker</a></div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#"> Prompt engineering</a></div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="content"><a href="#">Mango DB</a> </div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">Kubernetes</a> </div>
+            </div>
+            <div class="col-md-3">
+              <div class="content"><a href="#">create your own  Roadmap </a></div>
+            </div>
+
+            <div class="container">
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Menu</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="Newintern.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="internshipsnews.html" class="nav-link p-0 text-body-secondary">Internships News</a></li>
+                        <li class="nav-item mb-2"><a href="roadmap.html" class="nav-link p-0 text-body-secondary">Roadmaps</a></li>
+                        <li class="nav-item mb-2"><a href="exams.html" class="nav-link p-0 text-body-secondary">Exams</a></li>
+                        <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Roadmaps</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Font-End Developer</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Analyst</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Project Manager</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Technical Writer</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Back-End Developer</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Blogs</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent Posts</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trending 🔥</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech News</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diverpulse Media</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-md-5 offset-md-1 mb-3">
+                      <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Weekly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              
+                  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2024 NewIntern, Diverpulse Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+
+
+
+
+
+    
+
+</body>
