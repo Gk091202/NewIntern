@@ -1,328 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewIntern</title>
-    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
-<body>
-
-
-
-    <style>
-        body {
-            padding-top: 56px; /* Adjust based on navbar height */
-        }
-
-        .navbar {
-            transition: top 0.7s;
-        }
-
-        .navbar.hidden {
-            top: -56px; /* Set to negative navbar height */
-        }
-
-        .navbar.fixed-top {
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <title>First Year Engineering - NewIntern</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Dark Theme CSS -->
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
         <div class="container">
-            <!--logo with image-->
-            <a class="navbar-brand fs-4" href="index.html">
-                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                <span class="fw-bold fs-4 text-gradient">NewIntern</span>
             </a>
-            <!-- toggle button-->
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-light fs-4"></i>
             </button>
-            <!-- sidebar-->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Glad to see you 🙃</h5>
-                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- SIDE BAR BODY-->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="roadmap.html">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="exams.html">Exams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
-                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">🔍</button>
-                    </form>
-                </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Engineering
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item active" href="fe.html">First Year</a></li>
+                            <li><a class="dropdown-item" href="cse.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="em1.html">Mechanical</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                            <li><a class="dropdown-item" href="#">Civil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internshipsnews.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Your page content here -->
-
-    <script>
-        // JavaScript to handle navbar visibility on scroll
-        let prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                document.querySelector('.navbar').classList.remove('hidden');
-            } else {
-                document.querySelector('.navbar').classList.add('hidden');
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
-
-
-
-    <style>
-        * {
-    box-sizing: border-box;
-}
-    .content {
-      background-color: white;
-      padding: 20px;
-      margin: 20px;
-      text-align: left;
-      font-size: 1rem;
-      box-shadow: 0 0 9px rgba(25, 1, 1, 0.6);
-      border-radius: 5px;
-      margin-top: 40px;
-
-    }
-    h1{
-        font-style: italic;
-        margin-left: 135px;
-        margin-bottom: 30px;
-        margin-top: 10px;
-
-    }
-    .content a{
-        text-decoration: none;
-        color: black;
-        transition: background-color 0.3s ease;
-    }
-    .content:hover{
-    background-color:  #d5d5f0;
-}
-    .content a:hover{
-    background-color: rgb(144, 191, 209);
-
-    
-
-}
-</style>
-
-
-<div class="container mt-5 pt-3"> <!-- Adjust top margin and padding to ensure it's below the navbar -->
-    <div class="row">
-        <div class="col-12">
-            <!-- Back Button -->
-            <button onclick="window.history.back();" class="btn btn-light border">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-                </svg>
-                Back
-            </button>
-        </div>
-    </div>
-</div>
-
-
-<div class="container my-5">
-    <div class="row justify-content-center"> <!-- Center the button horizontally -->
-        <div class="col-auto"> <!-- Auto width based on content -->
-            <!-- SEMESTER-I Button -->
-            <button class="btn btn-dark">QUESTION PAPERS ARE AVAILABLE</button>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col">
-            <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
-                <h6 class="border-bottom pb-2 mb-0" style="font-size: 20px;"><b>SELECT YOUR BRANCH</b></h6>
-              <a href="cse.html">  <div class="d-flex text-body-secondary pt-3 align-items-center">
-                    <img src="cse.png" alt="User Image 1" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark>COMPUTER SCIENCE </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="se.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="aiml.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ARTIFICIAL INTELLIGENCE & MACHINE LEARNING </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="te.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="entc.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ELECTRONICS & TELECOMMUNICATIONS </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="mech.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> MECHANICAL ENGINEERING </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="civil.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> CIVIL ENGINEERING </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="ele.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ELECTRICAL ENGINEERING </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="chem.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> CHEMICAL ENGINEERING </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="aids.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ARTIFICIAL INTELLIGENCE & DATA SCIENCE </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="auto.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> AUTOMATION & ROBOTICS </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="it.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> INFORMATION TECHNOLOGY </mark> </strong>
-                    </p>
-                </div> </a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-4">
+                            <span class="text-gradient">First Year</span>
+                            <br>Engineering
+                        </h1>
+                        <p class="lead mb-4 text-secondary">
+                            Build your engineering foundation with strong fundamentals. 
+                            Your journey to becoming a successful engineer starts here! 🌟
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#subjects" class="btn btn-neon btn-lg">
+                                <i class="fas fa-book me-2"></i>View Subjects
+                            </a>
+                            <a href="#resources" class="btn btn-glass btn-lg">
+                                <i class="fas fa-download me-2"></i>Study Materials
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="fe.png" alt="First Year Engineering" class="img-fluid rounded-4 glass-effect">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="container mt-2 pt-3 mb-3">
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <!-- Submit Question Paper Button -->
-            <a href="https://forms.gle/zjtjJUsn1GxS3gus8" target="_blank">
-                <button class="btn btn-primary">
-                    Submit Question Paper
-                </button>
-            </a>
-            <!-- Blinking Text -->
-            <p class="blink-text">Earn up to Rs.100 Now!!!</p>
-            <p>Per Sumission, <b>T&C apply*</b> </p>
+    <!-- Quick Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-users neon-blue display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="5000">0</h3>
+                        <p class="text-secondary">+ Students Helped</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-book-open neon-green display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="12">0</h3>
+                        <p class="text-secondary">Core Subjects</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-file-alt neon-yellow display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="200">0</h3>
+                        <p class="text-secondary">+ Study Materials</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-trophy neon-purple display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="88">0</h3>
+                        <p class="text-secondary">% Pass Rate</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-<style> 
-    @keyframes blink {
-    0% { color: transparent; }
-    50% { color: red; }
-    100% { color: transparent; }
-  }
-  
-  .blink-text {
-    animation: blink 2s linear infinite;
-    font-weight: bold;
-  }
-</style>
-
-
-<div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Menu</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="Newintern.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="internshipsnews.html" class="nav-link p-0 text-body-secondary">Internships News</a></li>
-            <li class="nav-item mb-2"><a href="roadmap.html" class="nav-link p-0 text-body-secondary">Roadmaps</a></li>
-            <li class="nav-item mb-2"><a href="exams.html" class="nav-link p-0 text-body-secondary">Exams</a></li>
-            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-          </ul>
+    <!-- Subjects Section -->
+    <section id="subjects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📚 Core Subjects</h2>
+                <p class="lead text-secondary">Foundation subjects that every engineering student must master</p>
+            </div>
+            
+            <!-- Semester Tabs -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center glass-tabs" id="subjectTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#sem1">
+                                <i class="fas fa-play me-2"></i>Semester 1
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#sem2">
+                                <i class="fas fa-forward me-2"></i>Semester 2
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Semester 1 -->
+                <div class="tab-pane fade show active" id="sem1">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-calculator neon-blue display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Engineering Mathematics I</h4>
+                                <p class="text-secondary mb-3">
+                                    Differential calculus, integral calculus, matrices, and applications in engineering.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Calculus</span>
+                                    <span class="badge bg-gradient-neon me-1">Matrices</span>
+                                    <span class="badge bg-gradient-neon">Applications</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Tutorial</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-atom neon-green display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Physics for Engineers</h4>
+                                <p class="text-secondary mb-3">
+                                    Mechanics, waves, optics, modern physics, and their engineering applications.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Mechanics</span>
+                                    <span class="badge bg-gradient-neon me-1">Waves</span>
+                                    <span class="badge bg-gradient-neon">Optics</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Lab</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-code neon-purple display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Programming for Problem Solving</h4>
+                                <p class="text-secondary mb-3">
+                                    Introduction to programming using C language, algorithms, and problem-solving techniques.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">C Programming</span>
+                                    <span class="badge bg-gradient-neon me-1">Algorithms</span>
+                                    <span class="badge bg-gradient-neon">Logic</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Lab</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-drafting-compass neon-yellow display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Engineering Graphics & Design</h4>
+                                <p class="text-secondary mb-3">
+                                    Technical drawing, orthographic projections, isometric views, and CAD fundamentals.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">2D Drawing</span>
+                                    <span class="badge bg-gradient-neon me-1">3D Views</span>
+                                    <span class="badge bg-gradient-neon">CAD</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Practical</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-leaf neon-cyan display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Environmental Science</h4>
+                                <p class="text-secondary mb-3">
+                                    Ecology, pollution, sustainability, and environmental impact of engineering activities.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Ecology</span>
+                                    <span class="badge bg-gradient-neon me-1">Pollution</span>
+                                    <span class="badge bg-gradient-neon">Sustainability</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 3</small>
+                                    <small class="text-secondary">Theory</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-comments neon-orange display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Communication Skills</h4>
+                                <p class="text-secondary mb-3">
+                                    Technical writing, presentation skills, and professional communication for engineers.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Writing</span>
+                                    <span class="badge bg-gradient-neon me-1">Speaking</span>
+                                    <span class="badge bg-gradient-neon">Presentation</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 3</small>
+                                    <small class="text-secondary">Theory + Practical</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Semester 2 -->
+                <div class="tab-pane fade" id="sem2">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-square-root-alt neon-blue display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Engineering Mathematics II</h4>
+                                <p class="text-secondary mb-3">
+                                    Differential equations, Laplace transforms, vector calculus, and complex analysis.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Differential Eq.</span>
+                                    <span class="badge bg-gradient-neon me-1">Laplace</span>
+                                    <span class="badge bg-gradient-neon">Vector Calculus</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Tutorial</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-flask neon-green display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Chemistry for Engineers</h4>
+                                <p class="text-secondary mb-3">
+                                    Atomic structure, chemical bonding, materials chemistry, and corrosion.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Atomic Theory</span>
+                                    <span class="badge bg-gradient-neon me-1">Bonding</span>
+                                    <span class="badge bg-gradient-neon">Materials</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Lab</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fab fa-cpp neon-purple display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Object Oriented Programming</h4>
+                                <p class="text-secondary mb-3">
+                                    C++ programming, classes, objects, inheritance, polymorphism, and data structures.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">C++</span>
+                                    <span class="badge bg-gradient-neon me-1">OOP</span>
+                                    <span class="badge bg-gradient-neon">Data Structures</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Lab</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-microchip neon-yellow display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Digital Electronics</h4>
+                                <p class="text-secondary mb-3">
+                                    Boolean algebra, logic gates, combinational and sequential circuits.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Logic Gates</span>
+                                    <span class="badge bg-gradient-neon me-1">Boolean</span>
+                                    <span class="badge bg-gradient-neon">Circuits</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory + Lab</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-tools neon-cyan display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Workshop Technology</h4>
+                                <p class="text-secondary mb-3">
+                                    Manufacturing processes, machining, welding, and hands-on workshop experience.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Machining</span>
+                                    <span class="badge bg-gradient-neon me-1">Welding</span>
+                                    <span class="badge bg-gradient-neon">Manufacturing</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 3</small>
+                                    <small class="text-secondary">Practical</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card p-4 h-100 hover-lift">
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-balance-scale neon-orange display-4"></i>
+                                </div>
+                                <h4 class="text-light mb-3">Engineering Mechanics</h4>
+                                <p class="text-secondary mb-3">
+                                    Statics, dynamics, force analysis, and mechanical equilibrium principles.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-gradient-neon me-1">Statics</span>
+                                    <span class="badge bg-gradient-neon me-1">Dynamics</span>
+                                    <span class="badge bg-gradient-neon">Forces</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="text-secondary">Credits: 4</small>
+                                    <small class="text-secondary">Theory</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Roadmaps</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Font-End Developer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Analyst</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Project Manager</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Technical Writer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Back-End Developer</a></li>
-          </ul>
+    </section>
+
+    <!-- Study Tips Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">💡 Study Tips for FE</h2>
+                <p class="lead text-secondary">Essential strategies to excel in your first year</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-clock neon-blue display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Time Management</h5>
+                        <p class="text-secondary">
+                            Create a study schedule and stick to it. Balance theory and practical sessions effectively.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-users neon-green display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Study Groups</h5>
+                        <p class="text-secondary">
+                            Form study groups with classmates to discuss difficult concepts and solve problems together.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-hands-helping neon-purple display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Ask for Help</h5>
+                        <p class="text-secondary">
+                            Don't hesitate to ask professors and seniors when you're stuck. Clarify doubts immediately.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-book neon-yellow display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Regular Reading</h5>
+                        <p class="text-secondary">
+                            Make reading a daily habit. Go through lecture notes and reference books regularly.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-code neon-cyan display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Practice Coding</h5>
+                        <p class="text-secondary">
+                            Write programs daily. Practice coding problems and understand logic building step by step.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-heartbeat neon-orange display-4 mb-3"></i>
+                        <h5 class="text-light mb-3">Stay Healthy</h5>
+                        <p class="text-secondary">
+                            Maintain a healthy lifestyle with proper sleep, exercise, and nutrition for better focus.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Blogs</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent Posts</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trending 🔥</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech News</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diverpulse Media</a></li>
-          </ul>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📖 Study Resources</h2>
+                <p class="lead text-secondary">Comprehensive materials to support your first year journey</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-file-pdf neon-blue display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Lecture Notes</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Chapter-wise PDF Notes
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Formula Sheets
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Quick Revision Notes
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Subject-wise Summaries
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-neon btn-sm">Download Notes</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-play-circle neon-green display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Video Lectures</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Concept Explanation Videos
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Problem Solving Sessions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Lab Demonstration Videos
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Expert Guest Lectures
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-neon btn-sm">Watch Videos</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-tasks neon-purple display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Practice Problems</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Chapter-wise Problems
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Programming Exercises
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Numerical Solutions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Mock Test Papers
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-neon btn-sm">Practice Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-file-alt neon-yellow display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Previous Papers</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Last 5 Years Papers
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Model Answer Papers
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Important Questions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Marking Scheme
+                            </li>
+                        </ul>
+                        <a href="exams.html" class="btn btn-outline-neon btn-sm">View Papers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-flask neon-cyan display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Lab Manuals</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Experiment Procedures
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Observation Tables
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Result Analysis
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Safety Guidelines
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-neon btn-sm">Get Manuals</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-graduation-cap neon-orange display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Career Guidance</h4>
+                        <ul class="list-unstyled text-secondary mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Branch Selection Guide
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Industry Insights
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Skills Development
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Mentorship Program
+                            </li>
+                        </ul>
+                        <a href="roadmap.html" class="btn btn-outline-neon btn-sm">Get Guidance</a>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-md-5 offset-md-1 mb-3">
-            <form action="https://gauravkoli.com/subscribe/" method="POST">
-              <h5>Subscribe to our newsletter</h5>
-              <p>Weekly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" name="email" type="email" class="form-control" placeholder="Email address" required>
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-              </div>
-            </form>
-          </div>
-  
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2024 NewIntern, Diverpulse Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🌟 Success Stories</h2>
+                <p class="lead text-secondary">Inspiring journeys of our first-year engineering students</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <img src="https://via.placeholder.com/80" class="rounded-circle mb-3" alt="Student">
+                        <h5 class="text-light mb-2">Ankit Sharma</h5>
+                        <p class="text-secondary small mb-3">CSE Branch • CGPA: 9.2</p>
+                        <p class="text-secondary">
+                            "Started with zero programming knowledge, now building web applications. 
+                            The foundation courses really helped me understand the basics."
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge bg-gradient-neon me-1">Top 5%</span>
+                            <span class="badge bg-gradient-neon">Google Intern</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <img src="https://via.placeholder.com/80" class="rounded-circle mb-3" alt="Student">
+                        <h5 class="text-light mb-2">Priya Patel</h5>
+                        <p class="text-secondary small mb-3">Mechanical Branch • CGPA: 8.8</p>
+                        <p class="text-secondary">
+                            "The engineering graphics course improved my visualization skills tremendously. 
+                            Now I can design complex mechanical components with ease."
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge bg-gradient-neon me-1">Design Expert</span>
+                            <span class="badge bg-gradient-neon">CAD Master</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <img src="https://via.placeholder.com/80" class="rounded-circle mb-3" alt="Student">
+                        <h5 class="text-light mb-2">Rahul Kumar</h5>
+                        <p class="text-secondary small mb-3">Electrical Branch • CGPA: 9.0</p>
+                        <p class="text-secondary">
+                            "Digital electronics opened up a new world for me. From basic logic gates 
+                            to complex circuits, the journey has been amazing."
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <span class="badge bg-gradient-neon me-1">Circuit Wizard</span>
+                            <span class="badge bg-gradient-neon">Innovation Award</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Stay Connected! 📚</h2>
+                    <p class="lead text-secondary mb-4">
+                        Get first-year engineering tips, study materials, and career guidance delivered weekly!
+                    </p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group glass-effect rounded-pill overflow-hidden mb-3">
+                            <input type="email" class="form-control border-0 bg-transparent text-light" 
+                                   placeholder="Enter your email..." style="padding: 15px 20px;">
+                            <button class="btn btn-neon px-4" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <p class="small text-secondary">
+                        <i class="fas fa-lock me-1"></i>We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                        <span class="h4 fw-bold text-gradient">NewIntern</span>
+                    </div>
+                    <p class="text-secondary">
+                        Empowering the next generation of engineers with modern skills and opportunities. 
+                        Join our community and accelerate your career! 🚀
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none hover-neon">Home</a></li>
+                        <li><a href="aboutus.html" class="text-secondary text-decoration-none hover-neon">About Us</a></li>
+                        <li><a href="contactus.html" class="text-secondary text-decoration-none hover-neon">Contact</a></li>
+                        <li><a href="blogs.html" class="text-secondary text-decoration-none hover-neon">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Engineering</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cse.html" class="text-secondary text-decoration-none hover-neon">Computer Science</a></li>
+                        <li><a href="em1.html" class="text-secondary text-decoration-none hover-neon">Mechanical</a></li>
+                        <li><a href="fe.html" class="text-secondary text-decoration-none hover-neon">First Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="roadmap.html" class="text-secondary text-decoration-none hover-neon">Roadmaps</a></li>
+                        <li><a href="internshipsnews.html" class="text-secondary text-decoration-none hover-neon">Internships</a></li>
+                        <li><a href="exams.html" class="text-secondary text-decoration-none hover-neon">Exams</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-0">
+                        &copy; 2024 NewIntern. Made with ❤️ for students by students.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-0">
+                        <a href="#" class="text-decoration-none hover-neon">Privacy</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Terms</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Support</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Counter Animation
+            const counters = document.querySelectorAll('.counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current >= target) {
+                                counter.textContent = target;
+                            } else {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            }
+                        };
+                        
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+            
+            counters.forEach(counter => observer.observe(counter));
+            
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    if (email) {
+                        alert('Thanks for subscribing! 🎉 You\'ll receive FE study tips and materials weekly.');
+                        this.reset();
+                    }
+                });
+            }
+            
+            // Tab switching animation
+            const tabButtons = document.querySelectorAll('#subjectTabs button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabContent = document.querySelector(this.getAttribute('data-bs-target'));
+                    if (tabContent) {
+                        tabContent.style.opacity = '0';
+                        setTimeout(() => {
+                            tabContent.style.opacity = '1';
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>

@@ -1,81 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firefly Magic</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Add animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Custom Styles */
-        .rounded-image {
-            border-radius: 15px; /* Adjust the value for the desired corner roundness */
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 24px;
-            color: #000;
-        }
-
-        .like-comment-share {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .like-comment-share button {
-            margin-right: 10px;
-        }
-    </style>
+    <title>Engineering Blogs - NewIntern</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Dark Theme CSS -->
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
-
 <body>
-
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="social-icons">
-                    <!-- Add black-colored social media icons here -->
-                    <a href="#" title="Share on Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <!-- Add more social media icons as needed -->
-                </div>
-                <h1 class="text-center mb-4 animate__animated animate__fadeIn">Exploring the Enchanting World of Fireflies</h1>
-                <img src="https://via.placeholder.com/800x400" class="img-fluid rounded-image mb-4 animate__animated animate__zoomIn" alt="Fireflies">
-                <p class="animate__animated animate__fadeIn">In the serene summer nights, nature unveils its magical spectacle as fireflies illuminate the darkness </p>
-                <!-- More content... -->
-
-                <div class="like-comment-share">
-                    <button class="btn btn-primary"><i class="far fa-thumbs-up"></i> Like</button>
-                    <button class="btn btn-secondary"><i class="far fa-comment"></i> Comment</button>
-                    <button class="btn btn-info"><i class="fas fa-share"></i> Share</button>
-                </div>
-                <!-- Add comment section here -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                <span class="fw-bold fs-4 text-gradient">NewIntern</span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-light fs-4"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Engineering
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="fe.html">First Year</a></li>
+                            <li><a class="dropdown-item" href="cse.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="em1.html">Mechanical</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                            <li><a class="dropdown-item" href="#">Civil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internshipsnews.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Font Awesome Icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-4">
+                            <span class="text-gradient">Engineering</span>
+                            <br>Insights & Stories
+                        </h1>
+                        <p class="lead mb-4 text-secondary">
+                            Discover the latest trends, tutorials, career advice, and success stories 
+                            from the engineering world. Written by students, for students! ✨
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#featured" class="btn btn-neon btn-lg">
+                                <i class="fas fa-star me-2"></i>Featured Posts
+                            </a>
+                            <a href="#search" class="btn btn-glass btn-lg">
+                                <i class="fas fa-search me-2"></i>Search Articles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="iv.png" alt="Engineering Blogs" class="img-fluid rounded-4 glass-effect">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Search & Filter Section -->
+    <section id="search" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-card p-4">
+                        <div class="row">
+                            <div class="col-md-8 mb-3 mb-md-0">
+                                <div class="input-group">
+                                    <span class="input-group-text bg-transparent border-secondary">
+                                        <i class="fas fa-search text-secondary"></i>
+                                    </span>
+                                    <input type="text" class="form-control glass-input border-secondary" 
+                                           placeholder="Search articles, topics, or keywords..." id="searchInput">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select glass-input border-secondary" id="categoryFilter">
+                                    <option value="">All Categories</option>
+                                    <option value="tutorial">Tutorials</option>
+                                    <option value="career">Career Advice</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="interview">Interview Tips</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="success">Success Stories</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section id="featured" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🌟 Featured Articles</h2>
+                <p class="lead text-secondary">Our most popular and trending articles this week</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="glass-card overflow-hidden hover-lift">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="1.png" class="img-fluid h-100 object-fit-cover" alt="Featured Article">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="badge bg-gradient-neon me-2">Featured</span>
+                                        <span class="badge bg-secondary">Tutorial</span>
+                                    </div>
+                                    <h3 class="text-light mb-3">Complete Guide to Full Stack Development in 2024</h3>
+                                    <p class="text-secondary mb-3">
+                                        Master modern web development with React, Node.js, and cloud deployment. 
+                                        This comprehensive guide covers everything from basics to advanced concepts.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="https://via.placeholder.com/32" class="rounded-circle me-2" alt="Author">
+                                            <small class="text-secondary">By Rahul Sharma • 5 min read</small>
+                                        </div>
+                                        <div class="d-flex align-items-center text-secondary">
+                                            <i class="fas fa-heart me-1"></i>
+                                            <span>234</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 mb-4 hover-lift">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-success me-2">Success Story</span>
+                        </div>
+                        <h5 class="text-light mb-3">From College to Google: My Journey</h5>
+                        <p class="text-secondary mb-3">
+                            How I landed my dream job at Google straight out of college. Tips, preparation strategy, and lessons learned.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <small class="text-secondary">Priya Patel • 8 min read</small>
+                            <div class="d-flex align-items-center text-secondary">
+                                <i class="fas fa-heart me-1"></i>
+                                <span>189</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-warning me-2">Interview</span>
+                        </div>
+                        <h5 class="text-light mb-3">Top 50 DSA Questions for Interviews</h5>
+                        <p class="text-secondary mb-3">
+                            Most frequently asked Data Structures and Algorithms questions with detailed solutions and explanations.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <small class="text-secondary">Amit Kumar • 12 min read</small>
+                            <div class="d-flex align-items-center text-secondary">
+                                <i class="fas fa-heart me-1"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📚 Browse by Category</h2>
+                <p class="lead text-secondary">Find articles that match your interests and learning goals</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="tutorial">
+                        <i class="fas fa-code neon-blue display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Tutorials</h5>
+                        <p class="text-secondary small">Step-by-step guides</p>
+                        <span class="badge bg-gradient-neon">45 Articles</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="career">
+                        <i class="fas fa-briefcase neon-green display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Career</h5>
+                        <p class="text-secondary small">Professional advice</p>
+                        <span class="badge bg-gradient-neon">32 Articles</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="technology">
+                        <i class="fas fa-microchip neon-purple display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Technology</h5>
+                        <p class="text-secondary small">Latest tech trends</p>
+                        <span class="badge bg-gradient-neon">28 Articles</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="interview">
+                        <i class="fas fa-comments neon-yellow display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Interviews</h5>
+                        <p class="text-secondary small">Preparation tips</p>
+                        <span class="badge bg-gradient-neon">36 Articles</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="projects">
+                        <i class="fas fa-project-diagram neon-cyan display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Projects</h5>
+                        <p class="text-secondary small">Build & showcase</p>
+                        <span class="badge bg-gradient-neon">22 Articles</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift category-card" data-category="success">
+                        <i class="fas fa-trophy neon-orange display-5 mb-3"></i>
+                        <h5 class="text-light mb-2">Success</h5>
+                        <p class="text-secondary small">Inspiring stories</p>
+                        <span class="badge bg-gradient-neon">18 Articles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📰 Recent Articles</h2>
+                <p class="lead text-secondary">Fresh content from our engineering community</p>
+            </div>
+            
+            <div id="articlesContainer" class="row">
+                <!-- Article cards will be populated here by JavaScript -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-neon btn-lg" id="loadMoreBtn">
+                    <i class="fas fa-plus me-2"></i>Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Stay Updated! 📬</h2>
+                    <p class="lead text-secondary mb-4">
+                        Get the latest engineering articles, tutorials, and career tips delivered to your inbox!
+                    </p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group glass-effect rounded-pill overflow-hidden mb-3">
+                            <input type="email" class="form-control border-0 bg-transparent text-light" 
+                                   placeholder="Enter your email..." style="padding: 15px 20px;">
+                            <button class="btn btn-neon px-4" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <p class="small text-secondary">
+                        <i class="fas fa-lock me-1"></i>We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                        <span class="h4 fw-bold text-gradient">NewIntern</span>
+                    </div>
+                    <p class="text-secondary">
+                        Empowering the next generation of engineers with modern skills and opportunities. 
+                        Join our community and accelerate your career! 🚀
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none hover-neon">Home</a></li>
+                        <li><a href="aboutus.html" class="text-secondary text-decoration-none hover-neon">About Us</a></li>
+                        <li><a href="contactus.html" class="text-secondary text-decoration-none hover-neon">Contact</a></li>
+                        <li><a href="blogs.html" class="text-secondary text-decoration-none hover-neon">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Engineering</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cse.html" class="text-secondary text-decoration-none hover-neon">Computer Science</a></li>
+                        <li><a href="em1.html" class="text-secondary text-decoration-none hover-neon">Mechanical</a></li>
+                        <li><a href="fe.html" class="text-secondary text-decoration-none hover-neon">First Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="roadmap.html" class="text-secondary text-decoration-none hover-neon">Roadmaps</a></li>
+                        <li><a href="internshipsnews.html" class="text-secondary text-decoration-none hover-neon">Internships</a></li>
+                        <li><a href="exams.html" class="text-secondary text-decoration-none hover-neon">Exams</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-0">
+                        &copy; 2024 NewIntern. Made with ❤️ for students by students.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-0">
+                        <a href="#" class="text-decoration-none hover-neon">Privacy</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Terms</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Support</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Sample articles data
+            const articles = [
+                {
+                    id: 1,
+                    title: "Mastering React Hooks: A Complete Guide",
+                    excerpt: "Learn how to use React Hooks effectively in your projects with practical examples and best practices.",
+                    category: "tutorial",
+                    author: "Sarah Johnson",
+                    readTime: "7 min read",
+                    likes: 342,
+                    image: "2.png"
+                },
+                {
+                    id: 2,
+                    title: "How I Got My First Internship at Microsoft",
+                    excerpt: "A detailed journey of preparation, application process, and interview experience at Microsoft.",
+                    category: "success",
+                    author: "Alex Chen",
+                    readTime: "10 min read",
+                    likes: 289,
+                    image: "3.png"
+                },
+                {
+                    id: 3,
+                    title: "Building Scalable Microservices with Node.js",
+                    excerpt: "Architectural patterns and best practices for building robust microservices using Node.js.",
+                    category: "tutorial",
+                    author: "David Kumar",
+                    readTime: "12 min read",
+                    likes: 156,
+                    image: "4.png"
+                },
+                {
+                    id: 4,
+                    title: "AI in 2024: Trends Every Engineer Should Know",
+                    excerpt: "Latest developments in artificial intelligence and their impact on engineering careers.",
+                    category: "technology",
+                    author: "Maria Rodriguez",
+                    readTime: "8 min read",
+                    likes: 423,
+                    image: "5.png"
+                },
+                {
+                    id: 5,
+                    title: "Cracking the System Design Interview",
+                    excerpt: "Essential concepts and strategies for acing system design interviews at top tech companies.",
+                    category: "interview",
+                    author: "Raj Patel",
+                    readTime: "15 min read",
+                    likes: 567,
+                    image: "6.png"
+                },
+                {
+                    id: 6,
+                    title: "Building a Portfolio That Gets You Hired",
+                    excerpt: "Tips and examples for creating an impressive engineering portfolio that stands out.",
+                    category: "career",
+                    author: "Emily Wong",
+                    readTime: "6 min read",
+                    likes: 234,
+                    image: "7.png"
+                }
+            ];
+            
+            let filteredArticles = [...articles];
+            let displayedCount = 0;
+            const articlesPerLoad = 3;
+            
+            // Render articles
+            function renderArticles(articlesToRender, append = false) {
+                const container = document.getElementById('articlesContainer');
+                
+                if (!append) {
+                    container.innerHTML = '';
+                    displayedCount = 0;
+                }
+                
+                const articlesToShow = articlesToRender.slice(displayedCount, displayedCount + articlesPerLoad);
+                
+                articlesToShow.forEach(article => {
+                    const categoryColors = {
+                        tutorial: 'bg-primary',
+                        career: 'bg-success',
+                        technology: 'bg-info',
+                        interview: 'bg-warning',
+                        projects: 'bg-secondary',
+                        success: 'bg-danger'
+                    };
+                    
+                    const articleHtml = `
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="glass-card overflow-hidden hover-lift h-100">
+                                <img src="${article.image}" class="card-img-top" alt="${article.title}" style="height: 200px; object-fit: cover;">
+                                <div class="p-4">
+                                    <span class="badge ${categoryColors[article.category] || 'bg-secondary'} mb-2">
+                                        ${article.category.charAt(0).toUpperCase() + article.category.slice(1)}
+                                    </span>
+                                    <h5 class="text-light mb-3">${article.title}</h5>
+                                    <p class="text-secondary mb-3">${article.excerpt}</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <small class="text-secondary">${article.author} • ${article.readTime}</small>
+                                        <div class="d-flex align-items-center text-secondary">
+                                            <i class="fas fa-heart me-1"></i>
+                                            <span>${article.likes}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', articleHtml);
+                });
+                
+                displayedCount += articlesToShow.length;
+                
+                // Hide load more button if all articles are displayed
+                const loadMoreBtn = document.getElementById('loadMoreBtn');
+                if (displayedCount >= articlesToRender.length) {
+                    loadMoreBtn.style.display = 'none';
+                } else {
+                    loadMoreBtn.style.display = 'inline-block';
+                }
+            }
+            
+            // Initial render
+            renderArticles(filteredArticles);
+            
+            // Load more functionality
+            document.getElementById('loadMoreBtn').addEventListener('click', () => {
+                renderArticles(filteredArticles, true);
+            });
+            
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            const categoryFilter = document.getElementById('categoryFilter');
+            
+            function filterArticles() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedCategory = categoryFilter.value;
+                
+                filteredArticles = articles.filter(article => {
+                    const matchesSearch = article.title.toLowerCase().includes(searchTerm) || 
+                                        article.excerpt.toLowerCase().includes(searchTerm) ||
+                                        article.author.toLowerCase().includes(searchTerm);
+                    const matchesCategory = selectedCategory === '' || article.category === selectedCategory;
+                    
+                    return matchesSearch && matchesCategory;
+                });
+                
+                displayedCount = 0;
+                renderArticles(filteredArticles);
+            }
+            
+            searchInput.addEventListener('input', filterArticles);
+            categoryFilter.addEventListener('change', filterArticles);
+            
+            // Category card clicks
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    categoryFilter.value = category;
+                    filterArticles();
+                    
+                    // Scroll to articles section
+                    document.getElementById('articlesContainer').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+            
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    if (email) {
+                        alert('Thanks for subscribing! 🎉 You\'ll receive weekly engineering insights.');
+                        this.reset();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
-
 </html>

@@ -1,374 +1,1002 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewIntern</title>
-    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
-<body>
-
-
-
-    <style>
-        body {
-            padding-top: 56px; /* Adjust based on navbar height */
-        }
-
-        .navbar {
-            transition: top 0.7s;
-        }
-
-        .navbar.hidden {
-            top: -56px; /* Set to negative navbar height */
-        }
-
-        .navbar.fixed-top {
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <title>Computer Science Engineering - NewIntern</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Dark Theme CSS -->
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
         <div class="container">
-            <!--logo with image-->
-            <a class="navbar-brand fs-4" href="index.html">
-                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                <span class="fw-bold fs-4 text-gradient">NewIntern</span>
             </a>
-            <!-- toggle button-->
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-light fs-4"></i>
             </button>
-            <!-- sidebar-->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Glad to see you 🙃</h5>
-                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- SIDE BAR BODY-->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="roadmap.html">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="exams.html">Exams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
-                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">🔍</button>
-                    </form>
-                </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Engineering
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="fe.html">First Year</a></li>
+                            <li><a class="dropdown-item active" href="cse.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="em1.html">Mechanical</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                            <li><a class="dropdown-item" href="#">Civil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internshipsnews.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Your page content here -->
-
-    <script>
-        // JavaScript to handle navbar visibility on scroll
-        let prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                document.querySelector('.navbar').classList.remove('hidden');
-            } else {
-                document.querySelector('.navbar').classList.add('hidden');
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
-
-
-
-    <style>
-        * {
-    box-sizing: border-box;
-}
-    .content {
-      background-color: white;
-      padding: 20px;
-      margin: 20px;
-      text-align: left;
-      font-size: 1rem;
-      box-shadow: 0 0 9px rgba(25, 1, 1, 0.6);
-      border-radius: 5px;
-      margin-top: 40px;
-
-    }
-    h1{
-        font-style: italic;
-        margin-left: 135px;
-        margin-bottom: 30px;
-        margin-top: 10px;
-
-    }
-    .content a{
-        text-decoration: none;
-        color: black;
-        transition: background-color 0.3s ease;
-    }
-    .content:hover{
-    background-color:  #d5d5f0;
-}
-    .content a:hover{
-    background-color: rgb(144, 191, 209);
-
-    
-
-}
-</style>
-
-
-<div class="container mt-5 pt-3"> <!-- Adjust top margin and padding to ensure it's below the navbar -->
-    <div class="row">
-        <div class="col-12">
-            <!-- Back Button -->
-            <button onclick="window.history.back();" class="btn btn-light border">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-                </svg>
-                Back
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row justify-content-center"> <!-- Center the button horizontally -->
-        <div class="col-auto"> <!-- Auto width based on content -->
-            <!-- SEMESTER-I Button -->
-            <button class="btn btn-dark">SEMESTER-I</button>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col">
-            <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
-                <h6 class="border-bottom pb-2 mb-0" style="font-size: 20px;"><b>SELECT YOUR SUBJECT</b></h6>
-              <a href="em1.html">  <div class="d-flex text-body-secondary pt-3 align-items-center">
-                    <img src="i.png" alt="User Image 1" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark>ENGINEERING MATHEMATICS-I </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="se.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="ii.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ENGINEERING PHYSICS  </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="te.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="iii.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> SME </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="iv.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> BXE </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="v.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="v.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> PPS </mark> </strong>
-                    </p>
-                </div> </a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-4">
+                            <span class="text-gradient">Computer Science</span>
+                            <br>Engineering
+                        </h1>
+                        <p class="lead mb-4 text-secondary">
+                            Master the art of coding, algorithms, and system design. 
+                            Your gateway to the future of technology starts here! 💻
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#curriculum" class="btn btn-neon btn-lg">
+                                <i class="fas fa-book me-2"></i>View Curriculum
+                            </a>
+                            <a href="#projects" class="btn btn-glass btn-lg">
+                                <i class="fas fa-code me-2"></i>Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="cse.png" alt="Computer Science Engineering" class="img-fluid rounded-4 glass-effect">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="container mt-2 pt-3 mb-3">
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <!-- Submit Question Paper Button -->
-            <a href="https://forms.gle/zjtjJUsn1GxS3gus8" target="_blank">
-                <button class="btn btn-primary">
-                    Submit Question Paper
-                </button>
-            </a>
-            <!-- Blinking Text -->
-            <p class="blink-text">Earn up to Rs.100 Now!!!</p>
-            <p>Per Sumission, <b>T&C apply*</b> </p>
-        </div>
-    </div>
-</div>
-
-<style> 
-    @keyframes blink {
-    0% { color: transparent; }
-    50% { color: red; }
-    100% { color: transparent; }
-  }
-  
-  .blink-text {
-    animation: blink 2s linear infinite;
-    font-weight: bold;
-  }
-</style>
-
-
-
-<div class="container my-5">
-    <div class="row justify-content-center"> <!-- Center the button horizontally -->
-        <div class="col-auto"> <!-- Auto width based on content -->
-            <!-- SEMESTER-I Button -->
-            <button class="btn btn-dark">SEMESTER-II</button>
-        </div>
-    </div>
-</div>
-<div class="container my-5">
-    <div class="row">
-        <div class="col">
-            <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
-                <h6 class="border-bottom pb-2 mb-0" style="font-size: 20px;"><b>SELECT YOUR SUBJECT</b></h6>
-              <a href="fe.html">  <div class="d-flex text-body-secondary pt-3 align-items-center">
-                    <img src="i.png" alt="User Image 1" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark>ENGINEERING MATHEMATICS-II </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="se.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="ii.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ENGINEERING CHEMISTRY  </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="te.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="iii.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> BEE </mark> </strong>
-                    </p>
-                </div> </a>
-               <a href="be.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="iv.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ENGINEERING MECHANICS </mark> </strong>
-                    </p>
-                </div> </a>
-                <a href="v.html"> <div class="d-flex text-body-secondary pt-4 align-items-center">
-                    <img src="v.png" alt="User Image 2" style="width: 80px; height: auto;">
-                    <p class="pb-4 mb-0 small lh-sm border-bottom" style="font-size: 18px; margin-left: 15px;">
-                        <strong class="d-block text-gray-dark"> <mark> ENGINEERING GRAPHICS </mark> </strong>
-                    </p>
-                </div> </a>
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-graduation-cap neon-blue display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="95">0</h3>
+                        <p class="text-secondary">% Placement Rate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-dollar-sign neon-green display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="12">0</h3>
+                        <p class="text-secondary">LPA Average Package</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-building neon-yellow display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="500">0</h3>
+                        <p class="text-secondary">+ Hiring Companies</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-project-diagram neon-purple display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="1000">0</h3>
+                        <p class="text-secondary">+ Projects Completed</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<div class="container mt-2 pt-3 mb-3">
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <!-- Submit Question Paper Button -->
-            <a href="https://forms.gle/zjtjJUsn1GxS3gus8" target="_blank">
-                <button class="btn btn-primary">
-                    Submit Question Paper
-                </button>
-            </a>
-            <!-- Blinking Text -->
-            <p class="blink-text">Earn up to Rs.100 Now!!!</p>
-            <p>Per Sumission, <b>T&C apply*</b> </p>
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📚 CSE Curriculum</h2>
+                <p class="lead text-secondary">Comprehensive program designed for the tech industry</p>
+            </div>
+            
+            <!-- Year Tabs -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center glass-tabs" id="curriculumTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#year1">
+                                <i class="fas fa-seedling me-2"></i>First Year
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#year2">
+                                <i class="fas fa-leaf me-2"></i>Second Year
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#year3">
+                                <i class="fas fa-tree me-2"></i>Third Year
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#year4">
+                                <i class="fas fa-crown me-2"></i>Final Year
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- First Year -->
+                <div class="tab-pane fade show active" id="year1">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 1
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Engineering Mathematics I
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Physics for Engineers
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Programming for Problem Solving (C)
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Engineering Graphics & Design
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Environmental Science
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 2
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Engineering Mathematics II
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Chemistry for Engineers
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Object Oriented Programming (C++)
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Digital Electronics
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Communication Skills
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Year -->
+                <div class="tab-pane fade" id="year2">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 3
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Data Structures & Algorithms
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Computer Organization & Architecture
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Discrete Mathematics
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Database Management Systems
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Software Engineering
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 4
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Design & Analysis of Algorithms
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Operating Systems
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Computer Networks
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Web Technologies
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Theory of Computation
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Third Year -->
+                <div class="tab-pane fade" id="year3">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 5
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Machine Learning
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Compiler Design
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Computer Graphics
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Information Security
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Elective I
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 6
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Artificial Intelligence
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Distributed Systems
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Mobile App Development
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Cloud Computing
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Elective II
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Final Year -->
+                <div class="tab-pane fade" id="year4">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 7
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Major Project I
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Deep Learning
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Blockchain Technology
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Internet of Things
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Professional Ethics
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4">
+                                <h4 class="text-gradient mb-3">
+                                    <i class="fas fa-calendar-alt me-2"></i>Semester 8
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Major Project II
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Industrial Training
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Entrepreneurship Development
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Seminar & Technical Writing
+                                    </li>
+                                    <li class="mb-2 text-light">
+                                        <i class="fas fa-chevron-right text-neon me-2"></i>
+                                        Comprehensive Viva
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<style> 
-    @keyframes blink {
-    0% { color: transparent; }
-    50% { color: red; }
-    100% { color: transparent; }
-  }
-  
-  .blink-text {
-    animation: blink 2s linear infinite;
-    font-weight: bold;
-  }
-</style>
+    <!-- Career Paths Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🚀 Career Opportunities</h2>
+                <p class="lead text-secondary">Diverse career paths await CSE graduates</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-laptop-code neon-blue display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Software Developer</h4>
+                        <p class="text-secondary mb-3">
+                            Build applications, websites, and software solutions for various platforms and industries.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Frontend</span>
+                            <span class="badge bg-gradient-neon me-1">Backend</span>
+                            <span class="badge bg-gradient-neon">Full Stack</span>
+                        </div>
+                        <p class="text-success fw-bold">₹6-25 LPA</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-chart-line neon-green display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Data Scientist</h4>
+                        <p class="text-secondary mb-3">
+                            Analyze complex data to extract insights and build predictive models for business decisions.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Python</span>
+                            <span class="badge bg-gradient-neon me-1">ML</span>
+                            <span class="badge bg-gradient-neon">Analytics</span>
+                        </div>
+                        <p class="text-success fw-bold">₹8-30 LPA</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-shield-alt neon-red display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Cybersecurity Analyst</h4>
+                        <p class="text-secondary mb-3">
+                            Protect organizations from cyber threats and ensure the security of digital systems.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Security</span>
+                            <span class="badge bg-gradient-neon me-1">Ethical Hacking</span>
+                            <span class="badge bg-gradient-neon">Networks</span>
+                        </div>
+                        <p class="text-success fw-bold">₹7-28 LPA</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-cloud neon-purple display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Cloud Architect</h4>
+                        <p class="text-secondary mb-3">
+                            Design and manage cloud infrastructure solutions for scalable and reliable systems.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">AWS</span>
+                            <span class="badge bg-gradient-neon me-1">Azure</span>
+                            <span class="badge bg-gradient-neon">DevOps</span>
+                        </div>
+                        <p class="text-success fw-bold">₹10-35 LPA</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-mobile-alt neon-yellow display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Mobile App Developer</h4>
+                        <p class="text-secondary mb-3">
+                            Create innovative mobile applications for iOS and Android platforms.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">React Native</span>
+                            <span class="badge bg-gradient-neon me-1">Flutter</span>
+                            <span class="badge bg-gradient-neon">Native</span>
+                        </div>
+                        <p class="text-success fw-bold">₹5-22 LPA</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 h-100 hover-lift text-center">
+                        <i class="fas fa-robot neon-cyan display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">AI/ML Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Develop intelligent systems and machine learning models for automation and predictions.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">TensorFlow</span>
+                            <span class="badge bg-gradient-neon me-1">PyTorch</span>
+                            <span class="badge bg-gradient-neon">NLP</span>
+                        </div>
+                        <p class="text-success fw-bold">₹12-40 LPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Menu</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="Newintern.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="internshipsnews.html" class="nav-link p-0 text-body-secondary">Internships News</a></li>
-            <li class="nav-item mb-2"><a href="roadmap.html" class="nav-link p-0 text-body-secondary">Roadmaps</a></li>
-            <li class="nav-item mb-2"><a href="exams.html" class="nav-link p-0 text-body-secondary">Exams</a></li>
-            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-          </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">💡 Student Projects</h2>
+                <p class="lead text-secondary">Innovative projects built by our CSE students</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card overflow-hidden hover-lift">
+                        <img src="8.png" class="card-img-top" alt="Project" style="height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="text-light mb-0">Smart Traffic Management System</h5>
+                                <span class="badge bg-success">AI/ML</span>
+                            </div>
+                            <p class="text-secondary mb-3">
+                                An intelligent traffic management system using computer vision and machine learning 
+                                to optimize traffic flow and reduce congestion.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="badge bg-secondary me-1">Python</span>
+                                    <span class="badge bg-secondary me-1">OpenCV</span>
+                                    <span class="badge bg-secondary">TensorFlow</span>
+                                </div>
+                                <div class="d-flex align-items-center text-secondary">
+                                    <i class="fas fa-star me-1"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card overflow-hidden hover-lift">
+                        <img src="9.png" class="card-img-top" alt="Project" style="height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="text-light mb-0">E-Learning Platform</h5>
+                                <span class="badge bg-primary">Web Dev</span>
+                            </div>
+                            <p class="text-secondary mb-3">
+                                A comprehensive e-learning platform with interactive courses, 
+                                video streaming, and progress tracking features.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="badge bg-secondary me-1">React</span>
+                                    <span class="badge bg-secondary me-1">Node.js</span>
+                                    <span class="badge bg-secondary">MongoDB</span>
+                                </div>
+                                <div class="d-flex align-items-center text-secondary">
+                                    <i class="fas fa-star me-1"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card overflow-hidden hover-lift">
+                        <img src="10.png" class="card-img-top" alt="Project" style="height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="text-light mb-0">Blockchain Voting System</h5>
+                                <span class="badge bg-warning">Blockchain</span>
+                            </div>
+                            <p class="text-secondary mb-3">
+                                A secure and transparent voting system using blockchain technology 
+                                to ensure election integrity and voter privacy.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="badge bg-secondary me-1">Solidity</span>
+                                    <span class="badge bg-secondary me-1">Web3.js</span>
+                                    <span class="badge bg-secondary">Ethereum</span>
+                                </div>
+                                <div class="d-flex align-items-center text-secondary">
+                                    <i class="fas fa-star me-1"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="glass-card overflow-hidden hover-lift">
+                        <img src="1.png" class="card-img-top" alt="Project" style="height: 200px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h5 class="text-light mb-0">Healthcare Chatbot</h5>
+                                <span class="badge bg-info">NLP</span>
+                            </div>
+                            <p class="text-secondary mb-3">
+                                An AI-powered healthcare chatbot that provides medical assistance, 
+                                symptom analysis, and appointment scheduling.
+                            </p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="badge bg-secondary me-1">Python</span>
+                                    <span class="badge bg-secondary me-1">NLP</span>
+                                    <span class="badge bg-secondary">Flask</span>
+                                </div>
+                                <div class="d-flex align-items-center text-secondary">
+                                    <i class="fas fa-star me-1"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-neon btn-lg">
+                    <i class="fas fa-plus me-2"></i>View All Projects
+                </a>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Roadmaps</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Font-End Developer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Analyst</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Project Manager</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Technical Writer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Back-End Developer</a></li>
-          </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🛠️ Essential Skills</h2>
+                <p class="lead text-secondary">Master these skills to excel in your CSE career</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fab fa-python neon-blue display-4 mb-3"></i>
+                        <h5 class="text-light mb-2">Programming Languages</h5>
+                        <div class="skill-tags">
+                            <span class="badge bg-gradient-neon m-1">Python</span>
+                            <span class="badge bg-gradient-neon m-1">Java</span>
+                            <span class="badge bg-gradient-neon m-1">C++</span>
+                            <span class="badge bg-gradient-neon m-1">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-database neon-green display-4 mb-3"></i>
+                        <h5 class="text-light mb-2">Databases</h5>
+                        <div class="skill-tags">
+                            <span class="badge bg-gradient-neon m-1">MySQL</span>
+                            <span class="badge bg-gradient-neon m-1">MongoDB</span>
+                            <span class="badge bg-gradient-neon m-1">PostgreSQL</span>
+                            <span class="badge bg-gradient-neon m-1">Redis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fab fa-react neon-cyan display-4 mb-3"></i>
+                        <h5 class="text-light mb-2">Frameworks</h5>
+                        <div class="skill-tags">
+                            <span class="badge bg-gradient-neon m-1">React</span>
+                            <span class="badge bg-gradient-neon m-1">Node.js</span>
+                            <span class="badge bg-gradient-neon m-1">Django</span>
+                            <span class="badge bg-gradient-neon m-1">Spring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fab fa-aws neon-yellow display-4 mb-3"></i>
+                        <h5 class="text-light mb-2">Cloud & DevOps</h5>
+                        <div class="skill-tags">
+                            <span class="badge bg-gradient-neon m-1">AWS</span>
+                            <span class="badge bg-gradient-neon m-1">Docker</span>
+                            <span class="badge bg-gradient-neon m-1">Kubernetes</span>
+                            <span class="badge bg-gradient-neon m-1">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Blogs</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent Posts</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trending 🔥</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech News</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diverpulse Media</a></li>
-          </ul>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📖 Study Resources</h2>
+                <p class="lead text-secondary">Everything you need to excel in CSE</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-book neon-blue display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Study Materials</h4>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Complete Notes & PDFs
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Video Lectures
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Practice Problems
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Lab Assignments
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-neon btn-sm">Access Resources</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-file-alt neon-green display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Previous Papers</h4>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Last 5 Years Papers
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Solved Solutions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Important Questions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Marking Schemes
+                            </li>
+                        </ul>
+                        <a href="exams.html" class="btn btn-outline-neon btn-sm">View Papers</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-code neon-purple display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Coding Practice</h4>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                DSA Problems
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Interview Questions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Competitive Programming
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Code Solutions
+                            </li>
+                        </ul>
+                        <a href="roadmap.html" class="btn btn-outline-neon btn-sm">Start Coding</a>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-md-5 offset-md-1 mb-3">
-            <form action="https://gauravkoli.com/subscribe/" method="POST">
-              <h5>Subscribe to our newsletter</h5>
-              <p>Weekly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" name="email" type="email" class="form-control" placeholder="Email address" required>
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-              </div>
-            </form>
-          </div>
-  
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2024 NewIntern, Diverpulse Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Stay Updated! 💻</h2>
+                    <p class="lead text-secondary mb-4">
+                        Get the latest CSE updates, tutorials, and career opportunities delivered to your inbox!
+                    </p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group glass-effect rounded-pill overflow-hidden mb-3">
+                            <input type="email" class="form-control border-0 bg-transparent text-light" 
+                                   placeholder="Enter your email..." style="padding: 15px 20px;">
+                            <button class="btn btn-neon px-4" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <p class="small text-secondary">
+                        <i class="fas fa-lock me-1"></i>We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                        <span class="h4 fw-bold text-gradient">NewIntern</span>
+                    </div>
+                    <p class="text-secondary">
+                        Empowering the next generation of engineers with modern skills and opportunities. 
+                        Join our community and accelerate your career! 🚀
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none hover-neon">Home</a></li>
+                        <li><a href="aboutus.html" class="text-secondary text-decoration-none hover-neon">About Us</a></li>
+                        <li><a href="contactus.html" class="text-secondary text-decoration-none hover-neon">Contact</a></li>
+                        <li><a href="blogs.html" class="text-secondary text-decoration-none hover-neon">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Engineering</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cse.html" class="text-secondary text-decoration-none hover-neon">Computer Science</a></li>
+                        <li><a href="em1.html" class="text-secondary text-decoration-none hover-neon">Mechanical</a></li>
+                        <li><a href="fe.html" class="text-secondary text-decoration-none hover-neon">First Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="roadmap.html" class="text-secondary text-decoration-none hover-neon">Roadmaps</a></li>
+                        <li><a href="internshipsnews.html" class="text-secondary text-decoration-none hover-neon">Internships</a></li>
+                        <li><a href="exams.html" class="text-secondary text-decoration-none hover-neon">Exams</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-0">
+                        &copy; 2024 NewIntern. Made with ❤️ for students by students.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-0">
+                        <a href="#" class="text-decoration-none hover-neon">Privacy</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Terms</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Support</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Counter Animation
+            const counters = document.querySelectorAll('.counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current >= target) {
+                                counter.textContent = target;
+                            } else {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            }
+                        };
+                        
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+            
+            counters.forEach(counter => observer.observe(counter));
+            
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    if (email) {
+                        alert('Thanks for subscribing! 🎉 You\'ll receive CSE updates and opportunities.');
+                        this.reset();
+                    }
+                });
+            }
+            
+            // Tab switching animation
+            const tabButtons = document.querySelectorAll('#curriculumTabs button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabContent = document.querySelector(this.getAttribute('data-bs-target'));
+                    if (tabContent) {
+                        tabContent.style.opacity = '0';
+                        setTimeout(() => {
+                            tabContent.style.opacity = '1';
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>

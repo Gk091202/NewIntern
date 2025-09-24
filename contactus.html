@@ -1,194 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewIntern</title>
-    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
-<body>
-
-
-
-
-    <style>
-        body {
-            padding-top: 56px; /* Adjust based on navbar height */
-        }
-
-        .navbar {
-            transition: top 0.3s;
-        }
-
-        .navbar.hidden {
-            top: -56px; /* Set to negative navbar height */
-        }
-
-        .navbar.fixed-top {
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <title>Contact Us - NewIntern</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Dark Theme CSS -->
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
         <div class="container">
-            <!--logo with image-->
-            <a class="navbar-brand fs-4" href="index.html">
-                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                <span class="fw-bold fs-4 text-gradient">NewIntern</span>
             </a>
-            <!-- toggle button-->
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-light fs-4"></i>
             </button>
-            <!-- sidebar-->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- SIDE BAR BODY-->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="roadmap.html">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="exams.html">Exams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
-                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">🔍</button>
-                    </form>
-                </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Engineering
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="fe.html">First Year</a></li>
+                            <li><a class="dropdown-item" href="cse.html">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="em1.html">Mechanical</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                            <li><a class="dropdown-item" href="#">Civil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internshipsnews.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Your page content here -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-4">
+                            <span class="text-gradient">Let's Connect</span>
+                            <br>& Build Together
+                        </h1>
+                        <p class="lead mb-4 text-secondary">
+                            Have questions? Need guidance? Want to collaborate? 
+                            We're here to help you succeed in your engineering journey! 🚀
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#contact-form" class="btn btn-neon btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </a>
+                            <a href="#contact-info" class="btn btn-glass btn-lg">
+                                <i class="fas fa-info-circle me-2"></i>Contact Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="iii.png" alt="Contact Us" class="img-fluid rounded-4 glass-effect">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Methods Section -->
+    <section id="contact-info" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">📞 Get In Touch</h2>
+                <p class="lead text-secondary">Choose your preferred way to connect with us</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center h-100 hover-lift">
+                        <i class="fas fa-envelope neon-blue display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Email Us</h4>
+                        <p class="text-secondary mb-3">
+                            Send us an email and we'll get back to you within 24 hours
+                        </p>
+                        <a href="mailto:hello@newintern.com" class="btn btn-outline-neon">
+                            hello@newintern.com
+                        </a>
+                        <div class="mt-3">
+                            <small class="text-secondary">
+                                <i class="fas fa-clock me-1"></i>Response time: 24 hours
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center h-100 hover-lift">
+                        <i class="fab fa-whatsapp neon-green display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">WhatsApp</h4>
+                        <p class="text-secondary mb-3">
+                            Quick questions? Chat with us on WhatsApp for instant support
+                        </p>
+                        <a href="https://wa.me/919876543210" class="btn btn-outline-neon" target="_blank">
+                            +91 98765 43210
+                        </a>
+                        <div class="mt-3">
+                            <small class="text-secondary">
+                                <i class="fas fa-clock me-1"></i>Available: 9 AM - 9 PM
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center h-100 hover-lift">
+                        <i class="fab fa-discord neon-purple display-4 mb-3"></i>
+                        <h4 class="text-light mb-3">Discord Community</h4>
+                        <p class="text-secondary mb-3">
+                            Join our Discord server to connect with fellow students
+                        </p>
+                        <a href="#" class="btn btn-outline-neon">
+                            Join Server
+                        </a>
+                        <div class="mt-3">
+                            <small class="text-secondary">
+                                <i class="fas fa-users me-1"></i>5,000+ active members
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-4 fw-bold text-gradient mb-3">💬 Send Us a Message</h2>
+                        <p class="lead text-secondary">Fill out the form below and we'll get back to you soon!</p>
+                    </div>
+                    
+                    <div class="glass-card p-5">
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <label for="firstName" class="form-label text-light">
+                                        <i class="fas fa-user me-2"></i>First Name *
+                                    </label>
+                                    <input type="text" class="form-control glass-input" id="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <label for="lastName" class="form-label text-light">
+                                        <i class="fas fa-user me-2"></i>Last Name *
+                                    </label>
+                                    <input type="text" class="form-control glass-input" id="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <label for="email" class="form-label text-light">
+                                        <i class="fas fa-envelope me-2"></i>Email Address *
+                                    </label>
+                                    <input type="email" class="form-control glass-input" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 mb-4">
+                                    <label for="phone" class="form-label text-light">
+                                        <i class="fas fa-phone me-2"></i>Phone Number
+                                    </label>
+                                    <input type="tel" class="form-control glass-input" id="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="branch" class="form-label text-light">
+                                    <i class="fas fa-graduation-cap me-2"></i>Engineering Branch
+                                </label>
+                                <select class="form-select glass-input" id="branch">
+                                    <option value="">Select your branch</option>
+                                    <option value="cse">Computer Science Engineering</option>
+                                    <option value="mechanical">Mechanical Engineering</option>
+                                    <option value="electrical">Electrical Engineering</option>
+                                    <option value="civil">Civil Engineering</option>
+                                    <option value="chemical">Chemical Engineering</option>
+                                    <option value="electronics">Electronics Engineering</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="form-label text-light">
+                                    <i class="fas fa-tag me-2"></i>Subject *
+                                </label>
+                                <select class="form-select glass-input" id="subject" required>
+                                    <option value="">Select subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="internship">Internship Guidance</option>
+                                    <option value="exam">Exam Preparation</option>
+                                    <option value="roadmap">Learning Roadmap</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="feedback">Feedback/Suggestions</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a subject.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-light">
+                                    <i class="fas fa-comment me-2"></i>Message *
+                                </label>
+                                <textarea class="form-control glass-input" id="message" rows="5" 
+                                          placeholder="Tell us more about your inquiry..." required></textarea>
+                                <div class="invalid-feedback">
+                                    Please provide a message.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label text-secondary" for="newsletter">
+                                        Subscribe to our newsletter for updates and tips
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-neon btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    <span class="spinner-border spinner-border-sm ms-2 d-none" id="submitSpinner"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Success/Error Messages -->
+                    <div id="alertContainer" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Community Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🌐 Join Our Community</h2>
+                <p class="lead text-secondary">Connect with us on social media and be part of our growing community</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-instagram neon-pink display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">Instagram</h5>
+                                    <p class="text-secondary mb-3">Daily tips & behind-the-scenes</p>
+                                    <span class="badge bg-gradient-neon">25K Followers</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-linkedin neon-blue display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">LinkedIn</h5>
+                                    <p class="text-secondary mb-3">Professional updates & opportunities</p>
+                                    <span class="badge bg-gradient-neon">15K Connections</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-youtube neon-red display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">YouTube</h5>
+                                    <p class="text-secondary mb-3">Tutorials & career guidance</p>
+                                    <span class="badge bg-gradient-neon">50K Subscribers</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-twitter neon-cyan display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">Twitter</h5>
+                                    <p class="text-secondary mb-3">Quick updates & tech news</p>
+                                    <span class="badge bg-gradient-neon">12K Followers</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-github neon-green display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">GitHub</h5>
+                                    <p class="text-secondary mb-3">Open source projects</p>
+                                    <span class="badge bg-gradient-neon">8K Stars</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <div class="glass-card p-4 text-center hover-lift social-card">
+                                    <i class="fab fa-telegram neon-blue display-4 mb-3"></i>
+                                    <h5 class="text-light mb-2">Telegram</h5>
+                                    <p class="text-secondary mb-3">Instant updates & discussions</p>
+                                    <span class="badge bg-gradient-neon">20K Members</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">❓ Frequently Asked Questions</h2>
+                <p class="lead text-secondary">Quick answers to common questions</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed glass-button" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How can I get internship guidance?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    You can get internship guidance through our dedicated internships page, by joining our Discord community, 
+                                    or by sending us a direct message through the contact form above. We provide personalized advice, 
+                                    resume reviews, and interview preparation tips.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed glass-button" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide one-on-one mentoring?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    Yes! We offer personalized mentoring sessions for students who need focused guidance. 
+                                    You can request a mentoring session through our contact form or reach out to us on WhatsApp. 
+                                    Our mentors are experienced engineers working in top companies.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed glass-button" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How often do you update exam resources?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    We update our exam resources regularly - typically every semester. New question papers, 
+                                    solutions, and study materials are added as soon as they become available. 
+                                    Subscribe to our newsletter to get notified about new uploads.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed glass-button" type="button" 
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I contribute content to NewIntern?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-secondary">
+                                    Absolutely! We welcome contributions from students and professionals. 
+                                    You can contribute articles, tutorials, exam resources, or project ideas. 
+                                    Contact us through the form above with "Collaboration" as the subject to get started.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                        <span class="h4 fw-bold text-gradient">NewIntern</span>
+                    </div>
+                    <p class="text-secondary">
+                        Empowering the next generation of engineers with modern skills and opportunities. 
+                        Join our community and accelerate your career! 🚀
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none hover-neon">Home</a></li>
+                        <li><a href="aboutus.html" class="text-secondary text-decoration-none hover-neon">About Us</a></li>
+                        <li><a href="contactus.html" class="text-secondary text-decoration-none hover-neon">Contact</a></li>
+                        <li><a href="blogs.html" class="text-secondary text-decoration-none hover-neon">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Engineering</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="cse.html" class="text-secondary text-decoration-none hover-neon">Computer Science</a></li>
+                        <li><a href="em1.html" class="text-secondary text-decoration-none hover-neon">Mechanical</a></li>
+                        <li><a href="fe.html" class="text-secondary text-decoration-none hover-neon">First Year</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="roadmap.html" class="text-secondary text-decoration-none hover-neon">Roadmaps</a></li>
+                        <li><a href="internshipsnews.html" class="text-secondary text-decoration-none hover-neon">Internships</a></li>
+                        <li><a href="exams.html" class="text-secondary text-decoration-none hover-neon">Exams</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-0">
+                        &copy; 2024 NewIntern. Made with ❤️ for students by students.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-0">
+                        <a href="#" class="text-decoration-none hover-neon">Privacy</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Terms</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Support</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
     <script>
-        // JavaScript to handle navbar visibility on scroll
-        let prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                document.querySelector('.navbar').classList.remove('hidden');
-            } else {
-                document.querySelector('.navbar').classList.add('hidden');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Form validation and submission
+            const contactForm = document.getElementById('contactForm');
+            const submitSpinner = document.getElementById('submitSpinner');
+            const alertContainer = document.getElementById('alertContainer');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Bootstrap validation
+                    if (!this.checkValidity()) {
+                        e.stopPropagation();
+                        this.classList.add('was-validated');
+                        return;
+                    }
+                    
+                    // Show loading spinner
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    submitBtn.disabled = true;
+                    submitSpinner.classList.remove('d-none');
+                    
+                    // Simulate form submission
+                    setTimeout(() => {
+                        // Hide spinner
+                        submitBtn.disabled = false;
+                        submitSpinner.classList.add('d-none');
+                        
+                        // Show success message
+                        showAlert('success', '✅ Message sent successfully! We\'ll get back to you within 24 hours.');
+                        
+                        // Reset form
+                        this.reset();
+                        this.classList.remove('was-validated');
+                    }, 2000);
+                });
             }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
-</body>
-
-     
-    <!-- Inside the existing HTML code -->
-
-<div class="container my-5">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 order-lg-1 p-3 p-lg-5 pt-lg-3 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Contact Us</h1>
-
-            <!-- Contact form starts here -->
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="surname" class="form-label">Surname</label>
-                    <input type="text" class="form-control" id="surname" name="surname" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="mobile" class="form-label">Mobile Number</label>
-                    <input type="tel" class="form-control" id="mobile" name="mobile" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-
-                <button type="button" onclick="submitForm()" class="btn btn-primary">Submit</button>
-            </form>
-            <!-- Contact form ends here -->
-
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden order-lg-2">
-            <!-- Image on the right side -->
-            <img class="img-fluid rounded" src="https://static.vecteezy.com/system/resources/previews/011/381/995/original/male-customer-service-3d-cartoon-avatar-portrait-png.png" alt="Your Image">
-        </div>
-    </div>
-</div>
-
-<!-- JavaScript code for form submission -->
-<script>
-    function submitForm() {
-        var form = document.getElementById("contactForm");
-        var formData = new FormData(form);
-        var xhr = new XMLHttpRequest();
-
-        xhr.open("POST", "https://formspree.io/f/mgegvkqb", true); // Replace "your-formspree-id" with your actual Formspree ID
-
-        // Set headers for the request
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4) {
-                if (xhr.status == 200) {
-                    // Successful submission, you can redirect or show a success message here
-                    alert("Thank You! Form submitted successfully!");
-                } else {
-                    // Display an error message
-                    alert("Error submitting the form. Please try again later.");
-                }
+            
+            // Alert function
+            function showAlert(type, message) {
+                const alertHtml = `
+                    <div class="alert alert-${type} alert-dismissible fade show glass-card" role="alert">
+                        ${message}
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+                    </div>
+                `;
+                alertContainer.innerHTML = alertHtml;
+                
+                // Auto-dismiss after 5 seconds
+                setTimeout(() => {
+                    const alert = alertContainer.querySelector('.alert');
+                    if (alert) {
+                        const bsAlert = new bootstrap.Alert(alert);
+                        bsAlert.close();
+                    }
+                }, 5000);
             }
-        };
-
-        // Convert formData to JSON before sending
-        var jsonData = {};
-        formData.forEach(function (value, key) {
-            jsonData[key] = value;
+            
+            // Social card hover effects
+            const socialCards = document.querySelectorAll('.social-card');
+            socialCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.05)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
-
-        var jsonString = JSON.stringify(jsonData);
-
-        xhr.send(jsonString);
-    }
-</script>
-  
-
-
-
-
+    </script>
 </body>
 </html>

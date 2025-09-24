@@ -1,285 +1,973 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewIntern</title>
-    <link rel="icon" type="image/x-icon" href="newintern-fv.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
-<body>
-
-
-
-    <style>
-        body {
-            padding-top: 56px; /* Adjust based on navbar height */
-        }
-
-        .navbar {
-            transition: top 0.7s;
-        }
-
-        .navbar.hidden {
-            top: -56px; /* Set to negative navbar height */
-        }
-
-        .navbar.fixed-top {
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <title>Mechanical Engineering - NewIntern</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Dark Theme CSS -->
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
         <div class="container">
-            <!--logo with image-->
-            <a class="navbar-brand fs-4" href="index.html">
-                <img src="newintern.jpg" alt="Logo" height="40" width="40" class="rounded">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                <span class="fw-bold fs-4 text-gradient">NewIntern</span>
             </a>
-            <!-- toggle button-->
-            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-light fs-4"></i>
             </button>
-            <!-- sidebar-->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header-->
-                <div class="offcanvas-header text-dark border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Glad to see you 🙃</h5>
-                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- SIDE BAR BODY-->
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-5 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="internshipsnews.html">Internships News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="roadmap.html">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="exams.html">Exams</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="aboutus.html">About us</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
-                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">🔍</button>
-                    </form>
-                </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Engineering
+                        </a>
+                        <ul class="dropdown-menu glass-dropdown">
+                            <li><a class="dropdown-item" href="fe.html">First Year</a></li>
+                            <li><a class="dropdown-item" href="cse.html">Computer Science</a></li>
+                            <li><a class="dropdown-item active" href="em1.html">Mechanical</a></li>
+                            <li><a class="dropdown-item" href="#">Electrical</a></li>
+                            <li><a class="dropdown-item" href="#">Civil</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="internshipsnews.html">Internships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exams.html">Exams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Your page content here -->
-
-    <script>
-        // JavaScript to handle navbar visibility on scroll
-        let prevScrollPos = window.pageYOffset;
-
-        window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                document.querySelector('.navbar').classList.remove('hidden');
-            } else {
-                document.querySelector('.navbar').classList.add('hidden');
-            }
-
-            prevScrollPos = currentScrollPos;
-        };
-    </script>
-
-
-
-
-    <style>
-        * {
-    box-sizing: border-box;
-}
-    .content {
-      background-color: white;
-      padding: 20px;
-      margin: 20px;
-      text-align: left;
-      font-size: 1rem;
-      box-shadow: 0 0 9px rgba(25, 1, 1, 0.6);
-      border-radius: 5px;
-      margin-top: 40px;
-
-    }
-    h1{
-        font-style: italic;
-        margin-left: 135px;
-        margin-bottom: 30px;
-        margin-top: 10px;
-
-    }
-    .content a{
-        text-decoration: none;
-        color: black;
-        transition: background-color 0.3s ease;
-    }
-    .content:hover{
-    background-color:  #d5d5f0;
-}
-    .content a:hover{
-    background-color: rgb(144, 191, 209);
-
-    
-
-}
-</style>
-
-
-<div class="container mt-5 pt-3"> <!-- Adjust top margin and padding to ensure it's below the navbar -->
-    <div class="row">
-        <div class="col-6">
-            <!-- Back Button -->
-            <button onclick="window.history.back();" class="btn btn-light border">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-                </svg>
-                Back
-            </button>
-    </div>
-</div>
-
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col">
-            <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
-                <h6 class="border-bottom pb-2 mb-0" style="font-size: 20px;"><b>HELP US GROW BY SUBMITTING QUESTION PAPERS YOU HAVE</b></h6>
-                <!-- Dropdown for SEM-I -->
-                <div class="dropdown mt-3 text-center">
-                    <button class="btn btn-primary dropdown-toggle animate-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        DOWNLOAD QUESTION PAPER 
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">NOV 2019</a></li>
-                        <li><a class="dropdown-item" href="#">OCT 2019</a></li>
-                    </ul>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-4">
+                            <span class="text-gradient">Mechanical</span>
+                            <br>Engineering
+                        </h1>
+                        <p class="lead mb-4 text-secondary">
+                            Shape the future with precision engineering, innovative design, and cutting-edge technology. 
+                            Be the force behind tomorrow's machines! ⚙️
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#curriculum" class="btn btn-neon btn-lg">
+                                <i class="fas fa-cogs me-2"></i>View Curriculum
+                            </a>
+                            <a href="#careers" class="btn btn-glass btn-lg">
+                                <i class="fas fa-rocket me-2"></i>Career Paths
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="mech.png" alt="Mechanical Engineering" class="img-fluid rounded-4 glass-effect">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<style>
-.animate-button {
-    animation: pulseAnimation 2s infinite;
-  }
-  
-  @keyframes pulseAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-</style>
-
-<div class="container mt-2 pt-3 mb-3">
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <!-- Submit Question Paper Button -->
-            <a href="https://forms.gle/zjtjJUsn1GxS3gus8" target="_blank">
-                <button class="btn btn-primary">
-                    Submit Question Paper
-                </button>
-            </a>
-            <!-- Blinking Text -->
-            <p class="blink-text">Earn up to Rs.100 Now!!!</p>
-            <p>Per Sumission, <b>T&C apply*</b> </p>
+    <!-- Quick Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-percentage neon-blue display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="94">0</h3>
+                        <p class="text-secondary">% Placement Rate</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-rupee-sign neon-green display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="15">0</h3>
+                        <p class="text-secondary">LPA Avg Package</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-building neon-yellow display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="300">0</h3>
+                        <p class="text-secondary">+ Hiring Companies</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <i class="fas fa-project-diagram neon-purple display-4 mb-3"></i>
+                        <h3 class="display-5 fw-bold text-gradient counter" data-target="150">0</h3>
+                        <p class="text-secondary">+ Live Projects</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-
-<style> @keyframes blink {
-    0% { color: transparent; }
-    50% { color: red; }
-    100% { color: transparent; }
-  }
-  
-  .blink-text {
-    animation: blink 2s linear infinite;
-    font-weight: bold;
-  }
-</style>
-
-
-<div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Menu</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="Newintern.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="internshipsnews.html" class="nav-link p-0 text-body-secondary">Internships News</a></li>
-            <li class="nav-item mb-2"><a href="roadmap.html" class="nav-link p-0 text-body-secondary">Roadmaps</a></li>
-            <li class="nav-item mb-2"><a href="exams.html" class="nav-link p-0 text-body-secondary">Exams</a></li>
-            <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-body-secondary">About Us</a></li>
-          </ul>
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">⚙️ Curriculum Overview</h2>
+                <p class="lead text-secondary">Comprehensive 4-year program designed for industry readiness</p>
+            </div>
+            
+            <!-- Year Tabs -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center glass-tabs" id="curriculumTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#year2">
+                                <i class="fas fa-tools me-2"></i>Second Year
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#year3">
+                                <i class="fas fa-industry me-2"></i>Third Year
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#year4">
+                                <i class="fas fa-graduation-cap me-2"></i>Final Year
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Second Year -->
+                <div class="tab-pane fade show active" id="year2">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-blue me-2"></i>Semester 3
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-cube text-success me-2"></i>
+                                        <span>Strength of Materials</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-fire text-danger me-2"></i>
+                                        <span>Thermodynamics</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-wrench text-warning me-2"></i>
+                                        <span>Manufacturing Processes</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-atom text-info me-2"></i>
+                                        <span>Material Science</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-calculator text-primary me-2"></i>
+                                        <span>Engineering Mathematics III</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-flask text-secondary me-2"></i>
+                                        <span>Materials Lab</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-green me-2"></i>Semester 4
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-tint text-primary me-2"></i>
+                                        <span>Fluid Mechanics</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-cog text-warning me-2"></i>
+                                        <span>Machine Design I</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-bolt text-danger me-2"></i>
+                                        <span>Heat Transfer</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-microchip text-info me-2"></i>
+                                        <span>Manufacturing Technology</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-chart-line text-success me-2"></i>
+                                        <span>Engineering Economics</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-tools text-secondary me-2"></i>
+                                        <span>Manufacturing Lab</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Third Year -->
+                <div class="tab-pane fade" id="year3">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-purple me-2"></i>Semester 5
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-industry text-primary me-2"></i>
+                                        <span>Industrial Engineering</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-cogs text-warning me-2"></i>
+                                        <span>Machine Design II</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-compress-arrows-alt text-danger me-2"></i>
+                                        <span>IC Engines</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-robot text-info me-2"></i>
+                                        <span>Automation & Robotics</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-wind text-success me-2"></i>
+                                        <span>Fluid Machinery</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-laptop-code text-secondary me-2"></i>
+                                        <span>CAD/CAM Lab</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-yellow me-2"></i>Semester 6
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-car text-primary me-2"></i>
+                                        <span>Automobile Engineering</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-wave-square text-warning me-2"></i>
+                                        <span>Vibrations & Control</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-recycle text-success me-2"></i>
+                                        <span>Renewable Energy</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-cube text-info me-2"></i>
+                                        <span>Finite Element Analysis</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-shield-alt text-danger me-2"></i>
+                                        <span>Quality Control</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-briefcase text-secondary me-2"></i>
+                                        <span>Industrial Training</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Final Year -->
+                <div class="tab-pane fade" id="year4">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-cyan me-2"></i>Semester 7
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-project-diagram text-primary me-2"></i>
+                                        <span>Major Project I</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-coins text-warning me-2"></i>
+                                        <span>Operations Research</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-chart-bar text-success me-2"></i>
+                                        <span>Total Quality Management</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-user-tie text-info me-2"></i>
+                                        <span>Engineering Management</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-leaf text-success me-2"></i>
+                                        <span>Green Technology</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-graduation-cap text-secondary me-2"></i>
+                                        <span>Seminar</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="text-light mb-3">
+                                    <i class="fas fa-calendar-alt neon-orange me-2"></i>Semester 8
+                                </h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-trophy text-warning me-2"></i>
+                                        <span>Major Project II</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-handshake text-primary me-2"></i>
+                                        <span>Industry Interface</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-brain text-info me-2"></i>
+                                        <span>Advanced Manufacturing</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-microscope text-success me-2"></i>
+                                        <span>Research Methodology</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-globe text-danger me-2"></i>
+                                        <span>Global Engineering</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center">
+                                        <i class="fas fa-medal text-secondary me-2"></i>
+                                        <span>Comprehensive Viva</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Roadmaps</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Font-End Developer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Business Analyst</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Project Manager</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Technical Writer</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Back-End Developer</a></li>
-          </ul>
+    </section>
+
+    <!-- Career Paths Section -->
+    <section id="careers" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🚀 Career Opportunities</h2>
+                <p class="lead text-secondary">Diverse career paths with excellent growth potential</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-wrench neon-blue display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Design Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Create innovative product designs using CAD software and engineering principles.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">SolidWorks</span>
+                            <span class="badge bg-gradient-neon me-1">AutoCAD</span>
+                            <span class="badge bg-gradient-neon">CATIA</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹5-18 LPA</span>
+                            <span class="text-secondary">2000+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-industry neon-green display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Production Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Optimize manufacturing processes and ensure quality production systems.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Lean Manufacturing</span>
+                            <span class="badge bg-gradient-neon me-1">Six Sigma</span>
+                            <span class="badge bg-gradient-neon">Quality Control</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹6-20 LPA</span>
+                            <span class="text-secondary">1800+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-car neon-purple display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Automotive Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Develop next-generation vehicles with focus on efficiency and innovation.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Engine Design</span>
+                            <span class="badge bg-gradient-neon me-1">Vehicle Dynamics</span>
+                            <span class="badge bg-gradient-neon">Hybrid Tech</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹7-25 LPA</span>
+                            <span class="text-secondary">1500+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-robot neon-yellow display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Automation Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Design and implement automated systems for industrial applications.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">PLC</span>
+                            <span class="badge bg-gradient-neon me-1">SCADA</span>
+                            <span class="badge bg-gradient-neon">Robotics</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹8-28 LPA</span>
+                            <span class="text-secondary">1200+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-recycle neon-cyan display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Energy Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Work on renewable energy projects and sustainable engineering solutions.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Solar</span>
+                            <span class="badge bg-gradient-neon me-1">Wind Energy</span>
+                            <span class="badge bg-gradient-neon">Sustainability</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹6-22 LPA</span>
+                            <span class="text-secondary">900+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-plane neon-orange display-3 mb-3"></i>
+                        <h4 class="text-light mb-3">Aerospace Engineer</h4>
+                        <p class="text-secondary mb-3">
+                            Design aircraft, spacecraft, and propulsion systems for aviation industry.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Aerodynamics</span>
+                            <span class="badge bg-gradient-neon me-1">Propulsion</span>
+                            <span class="badge bg-gradient-neon">Flight Systems</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-success fw-bold">₹10-35 LPA</span>
+                            <span class="text-secondary">600+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Blogs</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Recent Posts</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trending 🔥</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tech News</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diverpulse Media</a></li>
-          </ul>
+    </section>
+
+    <!-- Student Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🛠️ Featured Projects</h2>
+                <p class="lead text-secondary">Innovative projects built by our mechanical engineering students</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">Solar Powered Car</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.8</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="Solar Car">
+                        <p class="text-secondary mb-3">
+                            Eco-friendly vehicle powered entirely by solar energy with efficient battery management system.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Solar Panels</span>
+                            <span class="badge bg-gradient-neon me-1">Battery Tech</span>
+                            <span class="badge bg-gradient-neon">Aerodynamics</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 4 Students</small>
+                            <small class="text-secondary">Duration: 8 Months</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">Robotic Arm</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.7</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="Robotic Arm">
+                        <p class="text-secondary mb-3">
+                            6-DOF robotic arm with precision control for industrial automation applications.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Servo Motors</span>
+                            <span class="badge bg-gradient-neon me-1">Arduino</span>
+                            <span class="badge bg-gradient-neon">Control Systems</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 3 Students</small>
+                            <small class="text-secondary">Duration: 6 Months</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">Wind Turbine Design</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.9</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="Wind Turbine">
+                        <p class="text-secondary mb-3">
+                            Optimized wind turbine blade design for maximum energy efficiency in low wind conditions.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">CFD Analysis</span>
+                            <span class="badge bg-gradient-neon me-1">Blade Design</span>
+                            <span class="badge bg-gradient-neon">Energy Systems</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 5 Students</small>
+                            <small class="text-secondary">Duration: 10 Months</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">3D Metal Printer</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.6</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="3D Metal Printer">
+                        <p class="text-secondary mb-3">
+                            Advanced additive manufacturing system for producing complex metal components.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Additive Mfg</span>
+                            <span class="badge bg-gradient-neon me-1">Metal Printing</span>
+                            <span class="badge bg-gradient-neon">Precision</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 6 Students</small>
+                            <small class="text-secondary">Duration: 12 Months</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">Smart HVAC System</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.7</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="HVAC System">
+                        <p class="text-secondary mb-3">
+                            IoT-enabled climate control system with energy optimization and remote monitoring.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">IoT</span>
+                            <span class="badge bg-gradient-neon me-1">Climate Control</span>
+                            <span class="badge bg-gradient-neon">Energy Efficiency</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 4 Students</small>
+                            <small class="text-secondary">Duration: 7 Months</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="glass-card p-4 hover-lift">
+                        <div class="project-header d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-light mb-0">Drone Delivery System</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-star text-warning me-1"></i>
+                                <span class="text-light">4.8</span>
+                            </div>
+                        </div>
+                        <img src="https://via.placeholder.com/300x200" class="img-fluid rounded mb-3" alt="Delivery Drone">
+                        <p class="text-secondary mb-3">
+                            Autonomous drone with GPS navigation and precision landing for package delivery.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-gradient-neon me-1">Autonomous Flight</span>
+                            <span class="badge bg-gradient-neon me-1">GPS</span>
+                            <span class="badge bg-gradient-neon">Payload</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-secondary">Team: 5 Students</small>
+                            <small class="text-secondary">Duration: 9 Months</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-  
-        <div class="col-md-5 offset-md-1 mb-3">
-            <form action="https://gauravkoli.com/subscribe/" method="POST">
-              <h5>Subscribe to our newsletter</h5>
-              <p>Weekly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" name="email" type="email" class="form-control" placeholder="Email address" required>
-                <button class="btn btn-primary" type="submit">Subscribe</button>
-              </div>
-            </form>
-          </div>
-  
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2024 NewIntern, Diverpulse Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🔧 Essential Skills</h2>
+                <p class="lead text-secondary">Core competencies for modern mechanical engineers</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-drafting-compass neon-blue display-3 mb-3"></i>
+                        <h5 class="text-light mb-3">CAD/CAM Software</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-1">SolidWorks</li>
+                            <li class="mb-1">AutoCAD</li>
+                            <li class="mb-1">CATIA</li>
+                            <li class="mb-1">Fusion 360</li>
+                            <li>Mastercam</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-calculator neon-green display-3 mb-3"></i>
+                        <h5 class="text-light mb-3">Analysis Tools</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-1">ANSYS</li>
+                            <li class="mb-1">MATLAB</li>
+                            <li class="mb-1">Simulink</li>
+                            <li class="mb-1">Abaqus</li>
+                            <li>LabVIEW</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-industry neon-purple display-3 mb-3"></i>
+                        <h5 class="text-light mb-3">Manufacturing</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-1">CNC Machining</li>
+                            <li class="mb-1">3D Printing</li>
+                            <li class="mb-1">Welding</li>
+                            <li class="mb-1">Casting</li>
+                            <li>Quality Control</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="glass-card p-4 text-center hover-lift">
+                        <i class="fas fa-microchip neon-yellow display-3 mb-3"></i>
+                        <h5 class="text-light mb-3">Automation</h5>
+                        <ul class="list-unstyled text-secondary">
+                            <li class="mb-1">PLC Programming</li>
+                            <li class="mb-1">SCADA</li>
+                            <li class="mb-1">HMI</li>
+                            <li class="mb-1">Robotics</li>
+                            <li>IoT Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Connections Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold text-gradient mb-3">🏭 Industry Partners</h2>
+                <p class="lead text-secondary">Leading companies hiring our mechanical engineering graduates</p>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">Tata Motors</h6>
+                        <small class="text-secondary">Automotive</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">Mahindra</h6>
+                        <small class="text-secondary">Engineering</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">L&T</h6>
+                        <small class="text-secondary">Infrastructure</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">Bajaj Auto</h6>
+                        <small class="text-secondary">Two Wheeler</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">Godrej</h6>
+                        <small class="text-secondary">Manufacturing</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <div class="glass-card p-3 hover-lift">
+                        <h6 class="text-light mb-0">Hero MotoCorp</h6>
+                        <small class="text-secondary">Automotive</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-4 fw-bold text-gradient mb-4">Stay Ahead! ⚙️</h2>
+                    <p class="lead text-secondary mb-4">
+                        Get mechanical engineering insights, project ideas, and career opportunities delivered weekly!
+                    </p>
+                    
+                    <form class="newsletter-form">
+                        <div class="input-group glass-effect rounded-pill overflow-hidden mb-3">
+                            <input type="email" class="form-control border-0 bg-transparent text-light" 
+                                   placeholder="Enter your email..." style="padding: 15px 20px;">
+                            <button class="btn btn-neon px-4" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <p class="small text-secondary">
+                        <i class="fas fa-lock me-1"></i>We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="NewIntern.svg" alt="NewIntern" height="40" class="me-2">
+                        <span class="h4 fw-bold text-gradient">NewIntern</span>
+                    </div>
+                    <p class="text-secondary">
+                        Empowering the next generation of engineers with modern skills and opportunities. 
+                        Join our community and accelerate your career! 🚀
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm me-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-glass btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none hover-neon">Home</a></li>
+                        <li><a href="aboutus.html" class="text-secondary text-decoration-none hover-neon">About Us</a></li>
+                        <li><a href="contactus.html" class="text-secondary text-decoration-none hover-neon">Contact</a></li>
+                        <li><a href="blogs.html" class="text-secondary text-decoration-none hover-neon">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Engineering</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="fe.html" class="text-secondary text-decoration-none hover-neon">First Year</a></li>
+                        <li><a href="cse.html" class="text-secondary text-decoration-none hover-neon">Computer Science</a></li>
+                        <li><a href="em1.html" class="text-secondary text-decoration-none hover-neon">Mechanical</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="roadmap.html" class="text-secondary text-decoration-none hover-neon">Roadmaps</a></li>
+                        <li><a href="internshipsnews.html" class="text-secondary text-decoration-none hover-neon">Internships</a></li>
+                        <li><a href="exams.html" class="text-secondary text-decoration-none hover-neon">Exams</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-secondary mb-0">
+                        &copy; 2024 NewIntern. Made with ❤️ for students by students.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-0">
+                        <a href="#" class="text-decoration-none hover-neon">Privacy</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Terms</a> | 
+                        <a href="#" class="text-decoration-none hover-neon">Support</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Counter Animation
+            const counters = document.querySelectorAll('.counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current >= target) {
+                                counter.textContent = target;
+                            } else {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            }
+                        };
+                        
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+            
+            counters.forEach(counter => observer.observe(counter));
+            
+            // Newsletter form
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    if (email) {
+                        alert('Thanks for subscribing! 🎉 You\'ll receive mechanical engineering updates and opportunities weekly.');
+                        this.reset();
+                    }
+                });
+            }
+            
+            // Tab switching animation
+            const tabButtons = document.querySelectorAll('#curriculumTabs button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabContent = document.querySelector(this.getAttribute('data-bs-target'));
+                    if (tabContent) {
+                        tabContent.style.opacity = '0';
+                        setTimeout(() => {
+                            tabContent.style.opacity = '1';
+                        }, 150);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+</html>
